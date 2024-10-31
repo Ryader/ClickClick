@@ -109,7 +109,17 @@ public class ClickMain : MonoBehaviour
     {
         if (!gameStarted) return;
 
-        Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
+        Vector2 screenPosition;
+        if (Touchscreen.current != null && Touchscreen.current.primaryTouch.press.isPressed)
+        {
+            screenPosition = Touchscreen.current.primaryTouch.position.ReadValue();
+        }
+        else
+        {
+            screenPosition = Mouse.current.position.ReadValue();
+        }
+
+        Ray ray = Camera.main.ScreenPointToRay(screenPosition);
         RaycastHit2D hit = Physics2D.GetRayIntersection(ray);
 
         if (hit.collider != null)
@@ -130,6 +140,7 @@ public class ClickMain : MonoBehaviour
             UpdateScoreText();
         }
     }
+
 
     private void UpdateScoreText() => scoreText.text = score.ToString();
 }

@@ -15956,7 +15956,7 @@ struct Unit_tAE478BD661DB092BBD04163BD94D5868EB99666F
 {
 	int32_t ___value__;
 };
-struct U3CU3Ec__DisplayClass13_0_t06B2DCE0B2392EA9C1060385649856BD20FEE07F  : public RuntimeObject
+struct U3CU3Ec__DisplayClass18_0_tD35A7D9BA8A35AB99438CD6314D1D2A3B070FD56  : public RuntimeObject
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___randomPos;
 	ClickMain_tD61B692299B39B735721E6E84976B61D36760F44* ___U3CU3E4__this;
@@ -25332,6 +25332,10 @@ struct ClickMain_tD61B692299B39B735721E6E84976B61D36760F44  : public MonoBehavio
 	int32_t ___countdownValue;
 	int32_t ___score;
 	InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___Click;
+	float ___screenWidth;
+	float ___screenHeight;
+	float ___borderLeftRight;
+	float ___borderUpDown;
 };
 struct ConfigYG_tA2D268B4AEDEB43A2899137C3B754999D11A8801  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -33057,7 +33061,7 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize6902 = { sizeof(ReflectionUt
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6903;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize6903 = { sizeof(U3CModuleU3E_tBB65183F1134474D09FF49B95625D25472B9BA8B), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6904;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize6904 = { sizeof(U3CU3Ec__DisplayClass13_0_t06B2DCE0B2392EA9C1060385649856BD20FEE07F), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize6904 = { sizeof(U3CU3Ec__DisplayClass18_0_tD35A7D9BA8A35AB99438CD6314D1D2A3B070FD56), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6905;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize6905 = { sizeof(ClickMain_tD61B692299B39B735721E6E84976B61D36760F44), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6906;
