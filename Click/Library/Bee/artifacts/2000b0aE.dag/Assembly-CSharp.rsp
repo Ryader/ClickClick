@@ -411,6 +411,7 @@
 "Assets/ClickMain.cs"
 "Assets/Menu.cs"
 "Assets/Obj.cs"
+"Assets/SLider.cs"
 "Assets/YandexGame/DebuggingMode/Scripts/DebuggingModeYG.cs"
 "Assets/YandexGame/Example/Scripts/DebugViewing.cs"
 "Assets/YandexGame/Example/Scripts/GetPlayerData.cs"

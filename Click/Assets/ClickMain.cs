@@ -3,11 +3,12 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+
 public class ClickMain : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI startText;
-    [SerializeField] private GameObject objMain;
+    [SerializeField] internal GameObject objMain;
     [SerializeField] private Vector3 pos;
 
     private List<GameObject> spawnedObjects = new();
@@ -20,13 +21,13 @@ public class ClickMain : MonoBehaviour
 
     private float screenWidth;
     private float screenHeight;
-    private float borderLeftRight = 50f; 
-    private float borderUpDown = 100f;   
+    private float borderLeftRight = 50f;
+    private float borderUpDown = 100f;
+
 
     private void Start()
     {
-        
-        pos = Vector3.zero;
+        pos = Vector2.zero;
         startText.gameObject.SetActive(true);
         startText.text = countdownValue.ToString();
         InvokeRepeating(nameof(UpdateCountdown), 1f, 1f);
@@ -60,9 +61,9 @@ public class ClickMain : MonoBehaviour
         screenHeight = Camera.main.orthographicSize * 2;
         screenWidth = screenHeight * Camera.main.aspect;
 
-        // Масштабируем игровое поле, если это необходимо
-        objMain.transform.localScale = new Vector3(1f, 1f, 1f);
+       // objMain.transform.localScale = new Vector2(1f, 1f);
     }
+
 
     private void Spawn()
     {
@@ -78,6 +79,8 @@ public class ClickMain : MonoBehaviour
         float yMin = -screenHeight / 2 + worldBorderOffsetY;
         float yMax = screenHeight / 2 - worldBorderOffsetY;
 
+        float objRadius = objMain.transform.localScale.x / 2f; // Радиус нового объекта
+
         do
         {
             randomPos = new Vector3(
@@ -85,12 +88,19 @@ public class ClickMain : MonoBehaviour
                 Random.Range(yMin, yMax),
                 0) + pos;
         }
-        while (spawnedObjects.Exists(obj => obj != null && Vector3.Distance(obj.transform.position, randomPos) < minDistance));
+        while (spawnedObjects.Exists(obj =>
+        {
+            if (obj == null) return false;
+            float existingObjRadius = obj.transform.localScale.x / 2f; // Радиус существующего объекта
+            float adjustedMinDistance = minDistance + objRadius + existingObjRadius; // Учитываем размер шариков
+            return Vector3.Distance(obj.transform.position, randomPos) < adjustedMinDistance;
+        }));
 
         // Добавляем объект в список и на сцену
         GameObject newObj = Instantiate(objMain, randomPos, Quaternion.identity);
         spawnedObjects.Add(newObj);
     }
+
 
 
     private void OnEnable()

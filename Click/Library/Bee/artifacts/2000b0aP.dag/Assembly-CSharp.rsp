@@ -322,6 +322,7 @@
 -analyzer:"E:/Unity/Editor/6000.0.22f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"E:/Unity/Editor/6000.0.22f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/ClickMain.cs"
+"Assets/DeviceScaleManager.cs"
 "Assets/Menu.cs"
 "Assets/Obj.cs"
 "Assets/YandexGame/DebuggingMode/Scripts/DebuggingModeYG.cs"

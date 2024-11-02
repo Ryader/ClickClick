@@ -1,6 +1,7 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="ClickMain" preserve="nothing"/>
+		<type fullname="DeviceScaleManager" preserve="nothing"/>
 		<type fullname="Menu" preserve="nothing"/>
 		<type fullname="Obj" preserve="nothing"/>
 		<type fullname="YG.InfoYG" preserve="nothing"/>

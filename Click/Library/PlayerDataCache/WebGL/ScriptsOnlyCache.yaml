@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - ClickMain
+    - DeviceScaleManager
     - Menu
     - Obj
     - YG.InfoYG
@@ -452,6 +453,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 36906}
     - Class: 114
       Script: {instanceID: 37682}
+    - Class: 114
+      Script: {instanceID: 39162}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1835,7 +1838,7 @@ ScriptsOnlyBuild:
     className: YandexGame
   - hash:
       serializedVersion: 2
-      Hash: 2c450238e2e5a1bc4284935c0586b522
+      Hash: 8a936032d10a022f91eb56c592f990bd
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ClickMain
@@ -1983,6 +1986,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: e316dfcc33bf5a2d203dc8a8a872d150
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: DeviceScaleManager
   platform: 20
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
