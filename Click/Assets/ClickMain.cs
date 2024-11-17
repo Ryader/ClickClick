@@ -3,12 +3,12 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-
 public class ClickMain : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI startText;
     [SerializeField] internal GameObject objMain;
+    [SerializeField] private InputAction Click;
     [SerializeField] private Vector3 pos;
 
     private List<GameObject> spawnedObjects = new();
@@ -17,16 +17,14 @@ public class ClickMain : MonoBehaviour
     private int countdownValue = 3;
     private int score = 0;
 
-    [SerializeField] private InputAction Click;
-
-    private float screenWidth;
-    private float screenHeight;
-    private float borderLeftRight = 50f;
+    private float borderLeftRight = 100f;
     private float borderUpDown = 100f;
-
+    private float screenHeight;
+    private float screenWidth;
 
     private void Start()
     {
+        
         pos = Vector2.zero;
         startText.gameObject.SetActive(true);
         startText.text = countdownValue.ToString();
@@ -57,51 +55,52 @@ public class ClickMain : MonoBehaviour
 
     private void Update()
     {
-        // Устанавливаем начальные границы видимой области
         screenHeight = Camera.main.orthographicSize * 2;
         screenWidth = screenHeight * Camera.main.aspect;
-
-       // objMain.transform.localScale = new Vector2(1f, 1f);
     }
-
 
     private void Spawn()
     {
         Vector3 randomPos;
 
-        // Переводим отступы из пикселей в единицы мира
         float worldBorderOffsetX = borderLeftRight / Screen.width * screenWidth;
         float worldBorderOffsetY = borderUpDown / Screen.height * screenHeight;
 
-        // Используем границы камеры для генерации позиций в видимой области с учетом отступов
-        float xMin = -screenWidth / 2 + worldBorderOffsetX;
-        float xMax = screenWidth / 2 - worldBorderOffsetX;
-        float yMin = -screenHeight / 2 + worldBorderOffsetY;
-        float yMax = screenHeight / 2 - worldBorderOffsetY;
+        float objRadius = objMain.transform.localScale.x / 2f;
 
-        float objRadius = objMain.transform.localScale.x / 2f; // Радиус нового объекта
+        float xMin = -screenWidth / 2 + worldBorderOffsetX + objRadius;
+        float xMax = screenWidth / 2 - worldBorderOffsetX - objRadius;
+        float yMin = -screenHeight / 2 + worldBorderOffsetY + objRadius;
+        float yMax = screenHeight / 2 - worldBorderOffsetY - objRadius;
+
+        int attempts = 0;
+        const int maxAttempts = 10;
 
         do
         {
+            if (attempts >= maxAttempts)
+            {
+                return;
+            }
+
             randomPos = new Vector3(
                 Random.Range(xMin, xMax),
                 Random.Range(yMin, yMax),
                 0) + pos;
+
+            attempts++;
         }
         while (spawnedObjects.Exists(obj =>
         {
             if (obj == null) return false;
-            float existingObjRadius = obj.transform.localScale.x / 2f; // Радиус существующего объекта
-            float adjustedMinDistance = minDistance + objRadius + existingObjRadius; // Учитываем размер шариков
+            float existingObjRadius = obj.transform.localScale.x / 2f;
+            float adjustedMinDistance = minDistance + objRadius + existingObjRadius;
             return Vector3.Distance(obj.transform.position, randomPos) < adjustedMinDistance;
         }));
 
-        // Добавляем объект в список и на сцену
         GameObject newObj = Instantiate(objMain, randomPos, Quaternion.identity);
         spawnedObjects.Add(newObj);
     }
-
-
 
     private void OnEnable()
     {
@@ -114,7 +113,6 @@ public class ClickMain : MonoBehaviour
         Click.Disable();
         Click.performed -= OnClickPerformed;
     }
-
     private void OnClickPerformed(InputAction.CallbackContext context)
     {
         if (!gameStarted) return;
@@ -136,7 +134,6 @@ public class ClickMain : MonoBehaviour
         {
             GameObject obj = hit.collider.gameObject;
 
-            // Обновляем счёт в зависимости от цвета объекта
             if (obj.CompareTag("Green"))
             {
                 score++;
@@ -150,7 +147,6 @@ public class ClickMain : MonoBehaviour
             UpdateScoreText();
         }
     }
-
 
     private void UpdateScoreText() => scoreText.text = score.ToString();
 }

@@ -14,7 +14,6 @@ public class Obj : MonoBehaviour
     {
         if (greenObject == null || mainObject == null)
         {
-            Debug.LogWarning("Не установлены все объекты в Obj.");
             return;
         }
 

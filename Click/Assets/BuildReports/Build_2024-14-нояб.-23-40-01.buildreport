@@ -1,0 +1,2728 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!641289076 &-6754052511590903647
+AudioBuildInfo:
+  m_IsAudioDisabled: 0
+  m_AudioClipCount: 0
+  m_AudioMixerCount: 0
+--- !u!114 &-6396456080512639786
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13803, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetRequirements:
+    minSdkVersion: 29
+    glesMinVersion: 196608
+    openGLRequireES31AEP: 0
+    vulkanMinVersion: 4194304
+    targetArchitectures: 2
+  outputPath: E:/ProjRep/ClickClick/Click/ClickClick.apk
+  buildOptions: 524296
+  buildApkPerCpuArchitecture: 0
+  buildAppBundle: 0
+  splitMode: 0
+  targetArchitectures: 2
+  versionCode: 1
+  packageName: com.CrazinGame.ClickClick
+  safeProductName: ClickClick
+  batchMode: 0
+  stagingArea: Temp/StagingArea
+  patchPackage: 0
+  gradleProjectPath: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle
+--- !u!114 &-4280874408359693052
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13802, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializedDependencies:
+  - key: Required by Scripts
+    value: []
+    icon: class/MonoScript
+    size: 0
+  - key: AndroidJNI Module
+    value: []
+    icon: package/com.unity.modules.androidjni
+    size: 0
+  - key: Animation Module
+    value:
+    - Animator
+    - AnimatorController
+    - AnimatorOverrideController
+    - RuntimeAnimatorController
+    icon: package/com.unity.modules.animation
+    size: 0
+  - key: Animator
+    value: []
+    icon: class/Animator
+    size: 0
+  - key: AnimatorController
+    value: []
+    icon: class/AnimatorController
+    size: 0
+  - key: AnimatorOverrideController
+    value: []
+    icon: class/AnimatorOverrideController
+    size: 0
+  - key: RuntimeAnimatorController
+    value: []
+    icon: class/RuntimeAnimatorController
+    size: 0
+  - key: Audio Module
+    value:
+    - AudioBehaviour
+    - AudioClip
+    - AudioListener
+    - AudioManager
+    - AudioResource
+    - SampleClip
+    icon: package/com.unity.modules.audio
+    size: 0
+  - key: AudioBehaviour
+    value:
+    - Assets/Scenes/SampleScene.unity
+    icon: class/AudioBehaviour
+    size: 0
+  - key: Assets/Scenes/SampleScene.unity
+    value: []
+    icon: class/SceneAsset
+    size: 0
+  - key: AudioClip
+    value: []
+    icon: class/AudioClip
+    size: 0
+  - key: AudioListener
+    value:
+    - Assets/Scenes/SampleScene.unity
+    icon: class/AudioListener
+    size: 0
+  - key: AudioManager
+    value: []
+    icon: class/AudioManager
+    size: 0
+  - key: AudioResource
+    value: []
+    icon: class/AudioResource
+    size: 0
+  - key: SampleClip
+    value: []
+    icon: class/SampleClip
+    size: 0
+  - key: Core Module
+    value:
+    - Behaviour
+    - BuildSettings
+    - Camera
+    - Component
+    - ComputeShader
+    - Cubemap
+    - CubemapArray
+    - DelayedCallManager
+    - EditorExtension
+    - GameManager
+    - GameObject
+    - GlobalGameManager
+    - GraphicsSettings
+    - InputManager
+    - LevelGameManager
+    - Light
+    - LightProbes
+    - LightingSettings
+    - LightmapSettings
+    - LowerResBlitTexture
+    - Material
+    - Mesh
+    - MeshFilter
+    - MeshRenderer
+    - MonoBehaviour
+    - MonoManager
+    - MonoScript
+    - NamedObject
+    - Object
+    - PlayerSettings
+    - PreloadData
+    - QualitySettings
+    - RectTransform
+    - ReflectionProbe
+    - RenderSettings
+    - RenderTexture
+    - Renderer
+    - ResourceManager
+    - RuntimeInitializeOnLoadManager
+    - Shader
+    - ShaderNameRegistry
+    - SortingGroup
+    - Sprite
+    - SpriteAtlas
+    - SpriteRenderer
+    - TagManager
+    - TextAsset
+    - Texture
+    - Texture2D
+    - Texture2DArray
+    - Texture3D
+    - TimeManager
+    - Transform
+    - Required by AndroidJNI Module
+    - Required by Animation Module
+    - Required by Audio Module
+    - Required by GraphicsStateCollectionSerializer Module
+    - Required by HierarchyCore Module
+    - Required by IMGUI Module
+    - Required by Input Module
+    - Required by InputForUI Module
+    - Required by InputLegacy Module
+    - Required by JSONSerialize Module
+    - Required by Physics Module
+    - Required by Physics2D Module
+    - Required by Properties Module
+    - Required by RuntimeInitializeOnLoadManagerInitializer Module
+    - Required by Subsystems Module
+    - Required by TextCoreFontEngine Module
+    - Required by TextCoreTextEngine Module
+    - Required by TextRendering Module
+    - Required by UI Module
+    - Required by UIElements Module
+    - Required by UnityAnalyticsCommon Module
+    - Required by VR Module
+    - Required by XR Module
+    icon: package/com.unity.modules.core
+    size: 0
+  - key: Behaviour
+    value: []
+    icon: class/Behaviour
+    size: 0
+  - key: BuildSettings
+    value: []
+    icon: class/BuildSettings
+    size: 0
+  - key: Camera
+    value:
+    - Assets/Scenes/SampleScene.unity
+    icon: class/Camera
+    size: 0
+  - key: Component
+    value: []
+    icon: class/Component
+    size: 0
+  - key: ComputeShader
+    value: []
+    icon: class/ComputeShader
+    size: 0
+  - key: Cubemap
+    value: []
+    icon: class/Cubemap
+    size: 0
+  - key: CubemapArray
+    value: []
+    icon: class/CubemapArray
+    size: 0
+  - key: DelayedCallManager
+    value: []
+    icon: class/DelayedCallManager
+    size: 0
+  - key: EditorExtension
+    value:
+    - Assets/Scenes/SampleScene.unity
+    icon: class/EditorExtension
+    size: 0
+  - key: GameManager
+    value: []
+    icon: class/GameManager
+    size: 0
+  - key: GameObject
+    value:
+    - Assets/Scenes/SampleScene.unity
+    icon: class/GameObject
+    size: 0
+  - key: GlobalGameManager
+    value: []
+    icon: class/GlobalGameManager
+    size: 0
+  - key: GraphicsSettings
+    value: []
+    icon: class/GraphicsSettings
+    size: 0
+  - key: InputManager
+    value: []
+    icon: class/InputManager
+    size: 0
+  - key: LevelGameManager
+    value:
+    - Assets/Scenes/SampleScene.unity
+    icon: class/LevelGameManager
+    size: 0
+  - key: Light
+    value: []
+    icon: class/Light
+    size: 0
+  - key: LightProbes
+    value: []
+    icon: class/LightProbes
+    size: 0
+  - key: LightingSettings
+    value: []
+    icon: class/LightingSettings
+    size: 0
+  - key: LightmapSettings
+    value:
+    - Assets/Scenes/SampleScene.unity
+    icon: class/LightmapSettings
+    size: 0
+  - key: LowerResBlitTexture
+    value: []
+    icon: class/LowerResBlitTexture
+    size: 0
+  - key: Material
+    value:
+    - Assets/Scenes/SampleScene.unity
+    icon: class/Material
+    size: 0
+  - key: Mesh
+    value: []
+    icon: class/Mesh
+    size: 0
+  - key: MeshFilter
+    value: []
+    icon: class/MeshFilter
+    size: 0
+  - key: MeshRenderer
+    value: []
+    icon: class/MeshRenderer
+    size: 0
+  - key: MonoBehaviour
+    value:
+    - Assets/Scenes/SampleScene.unity
+    icon: class/MonoBehaviour
+    size: 0
+  - key: MonoManager
+    value: []
+    icon: class/MonoManager
+    size: 0
+  - key: MonoScript
+    value:
+    - Assets/Scenes/SampleScene.unity
+    icon: class/MonoScript
+    size: 0
+  - key: NamedObject
+    value:
+    - Assets/Scenes/SampleScene.unity
+    icon: class/NamedObject
+    size: 0
+  - key: Object
+    value: []
+    icon: class/Object
+    size: 0
+  - key: PlayerSettings
+    value: []
+    icon: class/PlayerSettings
+    size: 0
+  - key: PreloadData
+    value: []
+    icon: class/PreloadData
+    size: 0
+  - key: QualitySettings
+    value: []
+    icon: class/QualitySettings
+    size: 0
+  - key: RectTransform
+    value:
+    - Assets/Scenes/SampleScene.unity
+    icon: class/RectTransform
+    size: 0
+  - key: ReflectionProbe
+    value: []
+    icon: class/ReflectionProbe
+    size: 0
+  - key: RenderSettings
+    value:
+    - Assets/Scenes/SampleScene.unity
+    icon: class/RenderSettings
+    size: 0
+  - key: RenderTexture
+    value: []
+    icon: class/RenderTexture
+    size: 0
+  - key: Renderer
+    value:
+    - Assets/Scenes/SampleScene.unity
+    icon: class/Renderer
+    size: 0
+  - key: ResourceManager
+    value: []
+    icon: class/ResourceManager
+    size: 0
+  - key: RuntimeInitializeOnLoadManager
+    value: []
+    icon: class/RuntimeInitializeOnLoadManager
+    size: 0
+  - key: Shader
+    value:
+    - Assets/Scenes/SampleScene.unity
+    icon: class/Shader
+    size: 0
+  - key: ShaderNameRegistry
+    value: []
+    icon: class/ShaderNameRegistry
+    size: 0
+  - key: SortingGroup
+    value: []
+    icon: class/SortingGroup
+    size: 0
+  - key: Sprite
+    value:
+    - Assets/Scenes/SampleScene.unity
+    icon: class/Sprite
+    size: 0
+  - key: SpriteAtlas
+    value: []
+    icon: class/SpriteAtlas
+    size: 0
+  - key: SpriteRenderer
+    value:
+    - Assets/Scenes/SampleScene.unity
+    icon: class/SpriteRenderer
+    size: 0
+  - key: TagManager
+    value: []
+    icon: class/TagManager
+    size: 0
+  - key: TextAsset
+    value: []
+    icon: class/TextAsset
+    size: 0
+  - key: Texture
+    value:
+    - Assets/Scenes/SampleScene.unity
+    icon: class/Texture
+    size: 0
+  - key: Texture2D
+    value:
+    - Assets/Scenes/SampleScene.unity
+    icon: class/Texture2D
+    size: 0
+  - key: Texture2DArray
+    value: []
+    icon: class/Texture2DArray
+    size: 0
+  - key: Texture3D
+    value: []
+    icon: class/Texture3D
+    size: 0
+  - key: TimeManager
+    value: []
+    icon: class/TimeManager
+    size: 0
+  - key: Transform
+    value: []
+    icon: class/Transform
+    size: 0
+  - key: Required by AndroidJNI Module
+    value: []
+    icon: package/com.unity.modules.androidjni
+    size: 0
+  - key: Required by Animation Module
+    value: []
+    icon: package/com.unity.modules.animation
+    size: 0
+  - key: Required by Audio Module
+    value: []
+    icon: package/com.unity.modules.audio
+    size: 0
+  - key: Required by GraphicsStateCollectionSerializer Module
+    value: []
+    icon: package/com.unity.modules.graphicsstatecollectionserializer
+    size: 0
+  - key: Required by HierarchyCore Module
+    value: []
+    icon: package/com.unity.modules.hierarchycore
+    size: 0
+  - key: Required by IMGUI Module
+    value: []
+    icon: package/com.unity.modules.imgui
+    size: 0
+  - key: Required by Input Module
+    value: []
+    icon: package/com.unity.modules.input
+    size: 0
+  - key: Required by InputForUI Module
+    value: []
+    icon: package/com.unity.modules.inputforui
+    size: 0
+  - key: Required by InputLegacy Module
+    value: []
+    icon: package/com.unity.modules.inputlegacy
+    size: 0
+  - key: Required by JSONSerialize Module
+    value: []
+    icon: package/com.unity.modules.jsonserialize
+    size: 0
+  - key: Required by Physics Module
+    value: []
+    icon: package/com.unity.modules.physics
+    size: 0
+  - key: Required by Physics2D Module
+    value: []
+    icon: package/com.unity.modules.physics2d
+    size: 0
+  - key: Required by Properties Module
+    value: []
+    icon: package/com.unity.modules.properties
+    size: 0
+  - key: Required by RuntimeInitializeOnLoadManagerInitializer Module
+    value: []
+    icon: package/com.unity.modules.runtimeinitializeonloadmanagerinitializer
+    size: 0
+  - key: Required by Subsystems Module
+    value: []
+    icon: package/com.unity.modules.subsystems
+    size: 0
+  - key: Required by TextCoreFontEngine Module
+    value: []
+    icon: package/com.unity.modules.textcorefontengine
+    size: 0
+  - key: Required by TextCoreTextEngine Module
+    value: []
+    icon: package/com.unity.modules.textcoretextengine
+    size: 0
+  - key: Required by TextRendering Module
+    value: []
+    icon: package/com.unity.modules.textrendering
+    size: 0
+  - key: Required by UI Module
+    value: []
+    icon: package/com.unity.modules.ui
+    size: 0
+  - key: Required by UIElements Module
+    value: []
+    icon: package/com.unity.modules.uielements
+    size: 0
+  - key: Required by UnityAnalyticsCommon Module
+    value: []
+    icon: package/com.unity.modules.unityanalyticscommon
+    size: 0
+  - key: Required by VR Module
+    value: []
+    icon: package/com.unity.modules.vr
+    size: 0
+  - key: Required by XR Module
+    value: []
+    icon: package/com.unity.modules.xr
+    size: 0
+  - key: GraphicsStateCollectionSerializer Module
+    value:
+    - GraphicsStateCollectionSerializer is always required
+    icon: package/com.unity.modules.graphicsstatecollectionserializer
+    size: 0
+  - key: GraphicsStateCollectionSerializer is always required
+    value: []
+    icon: class/DefaultAsset
+    size: 0
+  - key: HierarchyCore Module
+    value:
+    - Required by UIElements Module
+    icon: package/com.unity.modules.hierarchycore
+    size: 0
+  - key: IMGUI Module
+    value:
+    - Required by InputForUI Module
+    - Required by UIElements Module
+    icon: package/com.unity.modules.imgui
+    size: 0
+  - key: Input Module
+    value:
+    - Required by VR Module
+    - Required by XR Module
+    icon: package/com.unity.modules.input
+    size: 0
+  - key: InputForUI Module
+    value:
+    - Required by UIElements Module
+    icon: package/com.unity.modules.inputforui
+    size: 0
+  - key: InputLegacy Module
+    value:
+    - Required by IMGUI Module
+    - Required by InputForUI Module
+    - Required by UIElements Module
+    icon: package/com.unity.modules.inputlegacy
+    size: 0
+  - key: JSONSerialize Module
+    value:
+    - Required by GraphicsStateCollectionSerializer Module
+    - Required by Input Module
+    - Required by RuntimeInitializeOnLoadManagerInitializer Module
+    - Required by Subsystems Module
+    - Required by UIElements Module
+    - Required by VR Module
+    - Required by XR Module
+    icon: package/com.unity.modules.jsonserialize
+    size: 0
+  - key: Physics Module
+    value:
+    - Collider
+    - PhysicsManager
+    - Required by VR Module
+    - Required by XR Module
+    icon: package/com.unity.modules.physics
+    size: 0
+  - key: Collider
+    value: []
+    icon: class/Collider
+    size: 0
+  - key: PhysicsManager
+    value: []
+    icon: class/PhysicsManager
+    size: 0
+  - key: Physics2D Module
+    value:
+    - CircleCollider2D
+    - Collider2D
+    - Physics2DSettings
+    icon: package/com.unity.modules.physics2d
+    size: 0
+  - key: CircleCollider2D
+    value:
+    - Assets/Scenes/SampleScene.unity
+    icon: class/CircleCollider2D
+    size: 0
+  - key: Collider2D
+    value: []
+    icon: class/Collider2D
+    size: 0
+  - key: Physics2DSettings
+    value: []
+    icon: class/Physics2DSettings
+    size: 0
+  - key: Properties Module
+    value:
+    - Required by UIElements Module
+    icon: package/com.unity.modules.properties
+    size: 0
+  - key: RuntimeInitializeOnLoadManagerInitializer Module
+    value:
+    - RuntimeInitializeOnLoadManagerInitializer is always required
+    icon: package/com.unity.modules.runtimeinitializeonloadmanagerinitializer
+    size: 0
+  - key: RuntimeInitializeOnLoadManagerInitializer is always required
+    value: []
+    icon: class/DefaultAsset
+    size: 0
+  - key: SharedInternals Module
+    value:
+    - Required by AndroidJNI Module
+    - Required by Animation Module
+    - Required by Audio Module
+    - Required by Core Module
+    - Required by GraphicsStateCollectionSerializer Module
+    - Required by HierarchyCore Module
+    - Required by IMGUI Module
+    - Required by Input Module
+    - Required by InputForUI Module
+    - Required by InputLegacy Module
+    - Required by JSONSerialize Module
+    - Required by Physics Module
+    - Required by Physics2D Module
+    - Required by Properties Module
+    - Required by RuntimeInitializeOnLoadManagerInitializer Module
+    - Required by Subsystems Module
+    - Required by TextCoreFontEngine Module
+    - Required by TextCoreTextEngine Module
+    - Required by TextRendering Module
+    - Required by UI Module
+    - Required by UIElements Module
+    - Required by UnityAnalyticsCommon Module
+    - Required by VR Module
+    - Required by XR Module
+    icon: package/com.unity.modules.sharedinternals
+    size: 0
+  - key: Required by Core Module
+    value: []
+    icon: package/com.unity.modules.core
+    size: 0
+  - key: Subsystems Module
+    value:
+    - Required by XR Module
+    icon: package/com.unity.modules.subsystems
+    size: 0
+  - key: TextCoreFontEngine Module
+    value:
+    - Required by TextCoreTextEngine Module
+    - Required by UIElements Module
+    icon: package/com.unity.modules.textcorefontengine
+    size: 0
+  - key: TextCoreTextEngine Module
+    value:
+    - Required by IMGUI Module
+    - Required by UIElements Module
+    icon: package/com.unity.modules.textcoretextengine
+    size: 0
+  - key: TextRendering Module
+    value:
+    - Font
+    - Required by IMGUI Module
+    - Required by TextCoreFontEngine Module
+    - Required by TextCoreTextEngine Module
+    - Required by UI Module
+    - Required by UIElements Module
+    icon: package/com.unity.modules.textrendering
+    size: 0
+  - key: Font
+    value:
+    - Assets/Scenes/SampleScene.unity
+    icon: class/Font
+    size: 0
+  - key: UI Module
+    value:
+    - Canvas
+    - CanvasGroup
+    - CanvasRenderer
+    - Required by UIElements Module
+    icon: package/com.unity.modules.ui
+    size: 0
+  - key: Canvas
+    value:
+    - Assets/Scenes/SampleScene.unity
+    icon: class/Canvas
+    size: 0
+  - key: CanvasGroup
+    value: []
+    icon: class/CanvasGroup
+    size: 0
+  - key: CanvasRenderer
+    value:
+    - Assets/Scenes/SampleScene.unity
+    icon: class/CanvasRenderer
+    size: 0
+  - key: UIElements Module
+    value:
+    - UIRenderer
+    icon: package/com.unity.modules.uielements
+    size: 0
+  - key: UIRenderer
+    value: []
+    icon: class/UIRenderer
+    size: 0
+  - key: UnityAnalyticsCommon Module
+    value:
+    - Required by Subsystems Module
+    - Required by VR Module
+    icon: package/com.unity.modules.unityanalyticscommon
+    size: 0
+  - key: VR Module
+    value: []
+    icon: package/com.unity.modules.vr
+    size: 0
+  - key: XR Module
+    value:
+    - Required by VR Module
+    icon: package/com.unity.modules.xr
+    size: 0
+  modules:
+  - AndroidJNI Module
+  - Animation Module
+  - Audio Module
+  - Core Module
+  - GraphicsStateCollectionSerializer Module
+  - HierarchyCore Module
+  - IMGUI Module
+  - Input Module
+  - InputForUI Module
+  - InputLegacy Module
+  - JSONSerialize Module
+  - Physics Module
+  - Physics2D Module
+  - Properties Module
+  - RuntimeInitializeOnLoadManagerInitializer Module
+  - SharedInternals Module
+  - Subsystems Module
+  - TextCoreFontEngine Module
+  - TextCoreTextEngine Module
+  - TextRendering Module
+  - UI Module
+  - UIElements Module
+  - UnityAnalyticsCommon Module
+  - VR Module
+  - XR Module
+  serializedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  totalSize: 0
+--- !u!382020655 &-1456332880046194716
+PluginBuildInfo:
+  m_RuntimePlugins:
+  - nunit.framework
+  m_EditorPlugins:
+  - AppleEventIntegration
+--- !u!1125 &1
+BuildReport:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: "Build_2024-14-\u043D\u043E\u044F\u0431.-23-40-01"
+  m_Summary:
+    buildStartTime:
+      serializedVersion: 2
+      ticks: 638672135931583278
+    buildGUID: 87c002a079ce4b18a1974a60bfb2716b
+    platformName: Android
+    platformGroupName: Android
+    subtarget: 0
+    options: 524296
+    assetBundleOptions: 0
+    outputPath: E:/ProjRep/ClickClick/Click/ClickClick.apk
+    crc: 0
+    totalSize: 474739825
+    totalTimeTicks: 81728990
+    totalErrors: 1
+    totalWarnings: 13
+    buildType: 1
+    buildResult: 1
+    multiProcessEnabled: 0
+  m_Files:
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/data.unity3d
+    role: unity3d
+    id: 0
+    totalSize: 1542011
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/RuntimeInitializeOnLoads.json
+    role: json
+    id: 1
+    totalSize: 544
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/ScriptingAssemblies.json
+    role: json
+    id: 2
+    totalSize: 2797
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/boot.config
+    role: config
+    id: 3
+    totalSize: 192
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/Managed/Metadata/global-metadata.dat
+    role: dat
+    id: 4
+    totalSize: 4972168
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/Managed/Resources/mscorlib.dll-resources.dat
+    role: dat
+    id: 5
+    totalSize: 337563
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/arm64-v8a/libil2cpp.so
+    role: so
+    id: 6
+    totalSize: 35854584
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/analytics.json
+    role: json
+    id: 7
+    totalSize: 1269
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Assembly-CSharp.cpp
+    role: cpp
+    id: 8
+    totalSize: 197886
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Assembly-CSharp_CodeGen.c
+    role: c
+    id: 9
+    totalSize: 5858
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/GenericMethods.cpp
+    role: cpp
+    id: 10
+    totalSize: 1586148
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/GenericMethods__1.cpp
+    role: cpp
+    id: 11
+    totalSize: 1661516
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/GenericMethods__10.cpp
+    role: cpp
+    id: 12
+    totalSize: 1982637
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/GenericMethods__11.cpp
+    role: cpp
+    id: 13
+    totalSize: 1514357
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/GenericMethods__12.cpp
+    role: cpp
+    id: 14
+    totalSize: 1672138
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/GenericMethods__13.cpp
+    role: cpp
+    id: 15
+    totalSize: 1497279
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/GenericMethods__14.cpp
+    role: cpp
+    id: 16
+    totalSize: 1458849
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/GenericMethods__15.cpp
+    role: cpp
+    id: 17
+    totalSize: 1632823
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/GenericMethods__16.cpp
+    role: cpp
+    id: 18
+    totalSize: 1415984
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/GenericMethods__17.cpp
+    role: cpp
+    id: 19
+    totalSize: 1467241
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/GenericMethods__18.cpp
+    role: cpp
+    id: 20
+    totalSize: 1009180
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/GenericMethods__19.cpp
+    role: cpp
+    id: 21
+    totalSize: 1389562
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/GenericMethods__2.cpp
+    role: cpp
+    id: 22
+    totalSize: 2267923
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/GenericMethods__20.cpp
+    role: cpp
+    id: 23
+    totalSize: 1422130
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/GenericMethods__21.cpp
+    role: cpp
+    id: 24
+    totalSize: 1432826
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/GenericMethods__22.cpp
+    role: cpp
+    id: 25
+    totalSize: 1442374
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/GenericMethods__23.cpp
+    role: cpp
+    id: 26
+    totalSize: 952192
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/GenericMethods__24.cpp
+    role: cpp
+    id: 27
+    totalSize: 1202440
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/GenericMethods__25.cpp
+    role: cpp
+    id: 28
+    totalSize: 1573909
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/GenericMethods__26.cpp
+    role: cpp
+    id: 29
+    totalSize: 1007561
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/GenericMethods__3.cpp
+    role: cpp
+    id: 30
+    totalSize: 937323
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/GenericMethods__4.cpp
+    role: cpp
+    id: 31
+    totalSize: 2296918
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/GenericMethods__5.cpp
+    role: cpp
+    id: 32
+    totalSize: 2481642
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/GenericMethods__6.cpp
+    role: cpp
+    id: 33
+    totalSize: 935283
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/GenericMethods__7.cpp
+    role: cpp
+    id: 34
+    totalSize: 853249
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/GenericMethods__8.cpp
+    role: cpp
+    id: 35
+    totalSize: 1449619
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/GenericMethods__9.cpp
+    role: cpp
+    id: 36
+    totalSize: 1517500
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics.cpp
+    role: cpp
+    id: 37
+    totalSize: 1826925
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__1.cpp
+    role: cpp
+    id: 38
+    totalSize: 1679083
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__10.cpp
+    role: cpp
+    id: 39
+    totalSize: 1540941
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__11.cpp
+    role: cpp
+    id: 40
+    totalSize: 1612863
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__12.cpp
+    role: cpp
+    id: 41
+    totalSize: 834498
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__13.cpp
+    role: cpp
+    id: 42
+    totalSize: 806877
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__14.cpp
+    role: cpp
+    id: 43
+    totalSize: 862934
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__15.cpp
+    role: cpp
+    id: 44
+    totalSize: 875518
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__16.cpp
+    role: cpp
+    id: 45
+    totalSize: 916899
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__17.cpp
+    role: cpp
+    id: 46
+    totalSize: 824439
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__18.cpp
+    role: cpp
+    id: 47
+    totalSize: 898149
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__19.cpp
+    role: cpp
+    id: 48
+    totalSize: 1699122
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__2.cpp
+    role: cpp
+    id: 49
+    totalSize: 1689546
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__20.cpp
+    role: cpp
+    id: 50
+    totalSize: 3125238
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__21.cpp
+    role: cpp
+    id: 51
+    totalSize: 1921533
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__22.cpp
+    role: cpp
+    id: 52
+    totalSize: 1869121
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__23.cpp
+    role: cpp
+    id: 53
+    totalSize: 1879401
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__24.cpp
+    role: cpp
+    id: 54
+    totalSize: 1448437
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__25.cpp
+    role: cpp
+    id: 55
+    totalSize: 1455947
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__26.cpp
+    role: cpp
+    id: 56
+    totalSize: 1315012
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__27.cpp
+    role: cpp
+    id: 57
+    totalSize: 1255178
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__28.cpp
+    role: cpp
+    id: 58
+    totalSize: 1275265
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__29.cpp
+    role: cpp
+    id: 59
+    totalSize: 1262575
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__3.cpp
+    role: cpp
+    id: 60
+    totalSize: 1741625
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__30.cpp
+    role: cpp
+    id: 61
+    totalSize: 1342672
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__31.cpp
+    role: cpp
+    id: 62
+    totalSize: 1606870
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__32.cpp
+    role: cpp
+    id: 63
+    totalSize: 1005793
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__33.cpp
+    role: cpp
+    id: 64
+    totalSize: 2423159
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__34.cpp
+    role: cpp
+    id: 65
+    totalSize: 1904113
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__35.cpp
+    role: cpp
+    id: 66
+    totalSize: 1482488
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__36.cpp
+    role: cpp
+    id: 67
+    totalSize: 2139974
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__37.cpp
+    role: cpp
+    id: 68
+    totalSize: 2285613
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__38.cpp
+    role: cpp
+    id: 69
+    totalSize: 2306219
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__39.cpp
+    role: cpp
+    id: 70
+    totalSize: 2161450
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__4.cpp
+    role: cpp
+    id: 71
+    totalSize: 1728972
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__40.cpp
+    role: cpp
+    id: 72
+    totalSize: 1434570
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__41.cpp
+    role: cpp
+    id: 73
+    totalSize: 1538293
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__42.cpp
+    role: cpp
+    id: 74
+    totalSize: 1052711
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__43.cpp
+    role: cpp
+    id: 75
+    totalSize: 1058608
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__44.cpp
+    role: cpp
+    id: 76
+    totalSize: 1058229
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__45.cpp
+    role: cpp
+    id: 77
+    totalSize: 1093703
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__46.cpp
+    role: cpp
+    id: 78
+    totalSize: 1089597
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__47.cpp
+    role: cpp
+    id: 79
+    totalSize: 1068616
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__48.cpp
+    role: cpp
+    id: 80
+    totalSize: 1056023
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__49.cpp
+    role: cpp
+    id: 81
+    totalSize: 1086001
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__5.cpp
+    role: cpp
+    id: 82
+    totalSize: 1696763
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__50.cpp
+    role: cpp
+    id: 83
+    totalSize: 1100073
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__51.cpp
+    role: cpp
+    id: 84
+    totalSize: 1080614
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__52.cpp
+    role: cpp
+    id: 85
+    totalSize: 1078918
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__53.cpp
+    role: cpp
+    id: 86
+    totalSize: 1840272
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__54.cpp
+    role: cpp
+    id: 87
+    totalSize: 2154497
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__55.cpp
+    role: cpp
+    id: 88
+    totalSize: 1114419
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__56.cpp
+    role: cpp
+    id: 89
+    totalSize: 983908
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__57.cpp
+    role: cpp
+    id: 90
+    totalSize: 1265119
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__58.cpp
+    role: cpp
+    id: 91
+    totalSize: 1624809
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__59.cpp
+    role: cpp
+    id: 92
+    totalSize: 2006808
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__6.cpp
+    role: cpp
+    id: 93
+    totalSize: 1417163
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__60.cpp
+    role: cpp
+    id: 94
+    totalSize: 1767790
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__61.cpp
+    role: cpp
+    id: 95
+    totalSize: 1480466
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__62.cpp
+    role: cpp
+    id: 96
+    totalSize: 1378725
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__63.cpp
+    role: cpp
+    id: 97
+    totalSize: 1519022
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__64.cpp
+    role: cpp
+    id: 98
+    totalSize: 1362771
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__65.cpp
+    role: cpp
+    id: 99
+    totalSize: 1844921
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__66.cpp
+    role: cpp
+    id: 100
+    totalSize: 1878834
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__67.cpp
+    role: cpp
+    id: 101
+    totalSize: 1422096
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__68.cpp
+    role: cpp
+    id: 102
+    totalSize: 1248181
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__69.cpp
+    role: cpp
+    id: 103
+    totalSize: 1671975
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__7.cpp
+    role: cpp
+    id: 104
+    totalSize: 1503394
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__70.cpp
+    role: cpp
+    id: 105
+    totalSize: 1896657
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__71.cpp
+    role: cpp
+    id: 106
+    totalSize: 1449728
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__72.cpp
+    role: cpp
+    id: 107
+    totalSize: 1613320
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__73.cpp
+    role: cpp
+    id: 108
+    totalSize: 1106150
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__74.cpp
+    role: cpp
+    id: 109
+    totalSize: 1100304
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__75.cpp
+    role: cpp
+    id: 110
+    totalSize: 1096103
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__76.cpp
+    role: cpp
+    id: 111
+    totalSize: 1146670
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__77.cpp
+    role: cpp
+    id: 112
+    totalSize: 687779
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__8.cpp
+    role: cpp
+    id: 113
+    totalSize: 1498482
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Generics__9.cpp
+    role: cpp
+    id: 114
+    totalSize: 1659947
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Il2CppCCalculateFieldValues.cpp
+    role: cpp
+    id: 115
+    totalSize: 2153339
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Il2CppCCalculateFieldValues1.cpp
+    role: cpp
+    id: 116
+    totalSize: 2020146
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Il2CppCCalculateTypeValues.cpp
+    role: cpp
+    id: 117
+    totalSize: 3412372
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Il2CppCCalculateTypeValues1.cpp
+    role: cpp
+    id: 118
+    totalSize: 128049
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Il2CppCCFieldValuesTable.cpp
+    role: cpp
+    id: 119
+    totalSize: 303575
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Il2CppCCTypeValuesTable.cpp
+    role: cpp
+    id: 120
+    totalSize: 518060
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Il2CppCodeRegistration.cpp
+    role: cpp
+    id: 121
+    totalSize: 6722
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Il2CppGenericAdjustorThunkTable.c
+    role: c
+    id: 122
+    totalSize: 2195148
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Il2CppGenericClassTable.c
+    role: c
+    id: 123
+    totalSize: 938430
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Il2CppGenericInstDefinitions.c
+    role: c
+    id: 124
+    totalSize: 2745362
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Il2CppGenericMethodDefinitions.c
+    role: c
+    id: 125
+    totalSize: 1292169
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Il2CppGenericMethodPointerTable.c
+    role: c
+    id: 126
+    totalSize: 13267871
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Il2CppGenericMethodTable.c
+    role: c
+    id: 127
+    totalSize: 1506322
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Il2CppInteropDataTable.cpp
+    role: cpp
+    id: 128
+    totalSize: 471156
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Il2CppInvokerTable.cpp
+    role: cpp
+    id: 129
+    totalSize: 8711719
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Il2CppMetadataRegistration.c
+    role: c
+    id: 130
+    totalSize: 917
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Il2CppMetadataUsage.c
+    role: c
+    id: 131
+    totalSize: 2966604
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Il2CppReversePInvokeWrapperTable.cpp
+    role: cpp
+    id: 132
+    totalSize: 3053
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Il2CppRgctxTable.c
+    role: c
+    id: 133
+    totalSize: 616339
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Il2CppToEditorData.json
+    role: json
+    id: 134
+    totalSize: 9062
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Il2CppTypeDefinitions.c
+    role: c
+    id: 135
+    totalSize: 7471397
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Il2CppUnresolvedIndirectCallStubs.cpp
+    role: cpp
+    id: 136
+    totalSize: 1465413
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Mono.Security.cpp
+    role: cpp
+    id: 137
+    totalSize: 85308
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Mono.Security_CodeGen.c
+    role: c
+    id: 138
+    totalSize: 3215
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/mscorlib.cpp
+    role: cpp
+    id: 139
+    totalSize: 1265836
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/mscorlib_CodeGen.c
+    role: c
+    id: 140
+    totalSize: 1908587
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/mscorlib__1.cpp
+    role: cpp
+    id: 141
+    totalSize: 1632549
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/mscorlib__10.cpp
+    role: cpp
+    id: 142
+    totalSize: 1409070
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/mscorlib__11.cpp
+    role: cpp
+    id: 143
+    totalSize: 1332808
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/mscorlib__12.cpp
+    role: cpp
+    id: 144
+    totalSize: 1232793
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/mscorlib__13.cpp
+    role: cpp
+    id: 145
+    totalSize: 1516502
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/mscorlib__14.cpp
+    role: cpp
+    id: 146
+    totalSize: 1204471
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/mscorlib__15.cpp
+    role: cpp
+    id: 147
+    totalSize: 1149367
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/mscorlib__16.cpp
+    role: cpp
+    id: 148
+    totalSize: 961716
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/mscorlib__17.cpp
+    role: cpp
+    id: 149
+    totalSize: 1231940
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/mscorlib__2.cpp
+    role: cpp
+    id: 150
+    totalSize: 1041656
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/mscorlib__3.cpp
+    role: cpp
+    id: 151
+    totalSize: 1109125
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/mscorlib__4.cpp
+    role: cpp
+    id: 152
+    totalSize: 1623279
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/mscorlib__5.cpp
+    role: cpp
+    id: 153
+    totalSize: 1384518
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/mscorlib__6.cpp
+    role: cpp
+    id: 154
+    totalSize: 1345062
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/mscorlib__7.cpp
+    role: cpp
+    id: 155
+    totalSize: 1575260
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/mscorlib__8.cpp
+    role: cpp
+    id: 156
+    totalSize: 1254528
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/mscorlib__9.cpp
+    role: cpp
+    id: 157
+    totalSize: 1369901
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/System.Configuration.cpp
+    role: cpp
+    id: 158
+    totalSize: 23877
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/System.Configuration_CodeGen.c
+    role: c
+    id: 159
+    totalSize: 3478
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/System.Core.cpp
+    role: cpp
+    id: 160
+    totalSize: 55311
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/System.Core_CodeGen.c
+    role: c
+    id: 161
+    totalSize: 111542
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/System.cpp
+    role: cpp
+    id: 162
+    totalSize: 916760
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/System.Xml.cpp
+    role: cpp
+    id: 163
+    totalSize: 3013
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/System.Xml_CodeGen.c
+    role: c
+    id: 164
+    totalSize: 597
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/System_CodeGen.c
+    role: c
+    id: 165
+    totalSize: 132310
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/System__1.cpp
+    role: cpp
+    id: 166
+    totalSize: 1137373
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/System__2.cpp
+    role: cpp
+    id: 167
+    totalSize: 965737
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Unity.InputSystem.cpp
+    role: cpp
+    id: 168
+    totalSize: 1780779
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Unity.InputSystem.ForUI.cpp
+    role: cpp
+    id: 169
+    totalSize: 297718
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Unity.InputSystem.ForUI_CodeGen.c
+    role: c
+    id: 170
+    totalSize: 7595
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Unity.InputSystem_CodeGen.c
+    role: c
+    id: 171
+    totalSize: 1434226
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Unity.InputSystem__1.cpp
+    role: cpp
+    id: 172
+    totalSize: 1379439
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Unity.InputSystem__10.cpp
+    role: cpp
+    id: 173
+    totalSize: 1470218
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Unity.InputSystem__11.cpp
+    role: cpp
+    id: 174
+    totalSize: 322384
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Unity.InputSystem__2.cpp
+    role: cpp
+    id: 175
+    totalSize: 1776620
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Unity.InputSystem__3.cpp
+    role: cpp
+    id: 176
+    totalSize: 1156325
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Unity.InputSystem__4.cpp
+    role: cpp
+    id: 177
+    totalSize: 1900815
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Unity.InputSystem__5.cpp
+    role: cpp
+    id: 178
+    totalSize: 1860081
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Unity.InputSystem__6.cpp
+    role: cpp
+    id: 179
+    totalSize: 1958993
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Unity.InputSystem__7.cpp
+    role: cpp
+    id: 180
+    totalSize: 1642086
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Unity.InputSystem__8.cpp
+    role: cpp
+    id: 181
+    totalSize: 1890171
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Unity.InputSystem__9.cpp
+    role: cpp
+    id: 182
+    totalSize: 1834283
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Unity.TextMeshPro.cpp
+    role: cpp
+    id: 183
+    totalSize: 783678
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Unity.TextMeshPro_CodeGen.c
+    role: c
+    id: 184
+    totalSize: 384811
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Unity.TextMeshPro__1.cpp
+    role: cpp
+    id: 185
+    totalSize: 795643
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Unity.TextMeshPro__2.cpp
+    role: cpp
+    id: 186
+    totalSize: 1197278
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Unity.TextMeshPro__3.cpp
+    role: cpp
+    id: 187
+    totalSize: 1595932
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Unity.TextMeshPro__4.cpp
+    role: cpp
+    id: 188
+    totalSize: 1177524
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Unity.TextMeshPro__5.cpp
+    role: cpp
+    id: 189
+    totalSize: 1517689
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Unity.TextMeshPro__6.cpp
+    role: cpp
+    id: 190
+    totalSize: 738730
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Unity.TextMeshPro__7.cpp
+    role: cpp
+    id: 191
+    totalSize: 1391608
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/Unity.TextMeshPro__8.cpp
+    role: cpp
+    id: 192
+    totalSize: 433516
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.AIModule.cpp
+    role: cpp
+    id: 193
+    totalSize: 9847
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.AIModule_CodeGen.c
+    role: c
+    id: 194
+    totalSize: 985
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.AndroidJNIModule.cpp
+    role: cpp
+    id: 195
+    totalSize: 1137342
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.AndroidJNIModule_CodeGen.c
+    role: c
+    id: 196
+    totalSize: 123000
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.AnimationModule.cpp
+    role: cpp
+    id: 197
+    totalSize: 202977
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.AnimationModule_CodeGen.c
+    role: c
+    id: 198
+    totalSize: 19013
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.AudioModule.cpp
+    role: cpp
+    id: 199
+    totalSize: 63521
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.AudioModule_CodeGen.c
+    role: c
+    id: 200
+    totalSize: 6415
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.CoreModule.cpp
+    role: cpp
+    id: 201
+    totalSize: 1996532
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.CoreModule_CodeGen.c
+    role: c
+    id: 202
+    totalSize: 594280
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.CoreModule__1.cpp
+    role: cpp
+    id: 203
+    totalSize: 1606686
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.CoreModule__2.cpp
+    role: cpp
+    id: 204
+    totalSize: 1769622
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.cpp
+    role: cpp
+    id: 205
+    totalSize: 577
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.GridModule.cpp
+    role: cpp
+    id: 206
+    totalSize: 1828
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.GridModule_CodeGen.c
+    role: c
+    id: 207
+    totalSize: 357
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.HierarchyCoreModule.cpp
+    role: cpp
+    id: 208
+    totalSize: 662237
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.HierarchyCoreModule_CodeGen.c
+    role: c
+    id: 209
+    totalSize: 66038
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.IMGUIModule.cpp
+    role: cpp
+    id: 210
+    totalSize: 1216323
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.IMGUIModule_CodeGen.c
+    role: c
+    id: 211
+    totalSize: 102758
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.IMGUIModule__1.cpp
+    role: cpp
+    id: 212
+    totalSize: 273709
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.InputForUIModule.cpp
+    role: cpp
+    id: 213
+    totalSize: 662153
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.InputForUIModule_CodeGen.c
+    role: c
+    id: 214
+    totalSize: 65989
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.InputLegacyModule.cpp
+    role: cpp
+    id: 215
+    totalSize: 192671
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.InputLegacyModule_CodeGen.c
+    role: c
+    id: 216
+    totalSize: 16915
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.InputModule.cpp
+    role: cpp
+    id: 217
+    totalSize: 39169
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.InputModule_CodeGen.c
+    role: c
+    id: 218
+    totalSize: 4261
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.JSONSerializeModule.cpp
+    role: cpp
+    id: 219
+    totalSize: 34755
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.JSONSerializeModule_CodeGen.c
+    role: c
+    id: 220
+    totalSize: 2204
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.Physics2DModule.cpp
+    role: cpp
+    id: 221
+    totalSize: 174287
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.Physics2DModule_CodeGen.c
+    role: c
+    id: 222
+    totalSize: 12544
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.PhysicsModule.cpp
+    role: cpp
+    id: 223
+    totalSize: 267198
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.PhysicsModule_CodeGen.c
+    role: c
+    id: 224
+    totalSize: 22242
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.PropertiesModule.cpp
+    role: cpp
+    id: 225
+    totalSize: 1892648
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.PropertiesModule_CodeGen.c
+    role: c
+    id: 226
+    totalSize: 255570
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.SharedInternalsModule.cpp
+    role: cpp
+    id: 227
+    totalSize: 80588
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.SharedInternalsModule_CodeGen.c
+    role: c
+    id: 228
+    totalSize: 11638
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.SpriteShapeModule.cpp
+    role: cpp
+    id: 229
+    totalSize: 1835
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.SpriteShapeModule_CodeGen.c
+    role: c
+    id: 230
+    totalSize: 378
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.SubsystemsModule.cpp
+    role: cpp
+    id: 231
+    totalSize: 94070
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.SubsystemsModule_CodeGen.c
+    role: c
+    id: 232
+    totalSize: 8170
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.TextCoreFontEngineModule.cpp
+    role: cpp
+    id: 233
+    totalSize: 509838
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.TextCoreFontEngineModule_CodeGen.c
+    role: c
+    id: 234
+    totalSize: 59779
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.TextCoreTextEngineModule.cpp
+    role: cpp
+    id: 235
+    totalSize: 1578577
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.TextCoreTextEngineModule_CodeGen.c
+    role: c
+    id: 236
+    totalSize: 153464
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.TextCoreTextEngineModule__1.cpp
+    role: cpp
+    id: 237
+    totalSize: 1849752
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.TextCoreTextEngineModule__2.cpp
+    role: cpp
+    id: 238
+    totalSize: 739887
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.TextCoreTextEngineModule__3.cpp
+    role: cpp
+    id: 239
+    totalSize: 1170474
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.TextCoreTextEngineModule__4.cpp
+    role: cpp
+    id: 240
+    totalSize: 587964
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.TextRenderingModule.cpp
+    role: cpp
+    id: 241
+    totalSize: 173491
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.TextRenderingModule_CodeGen.c
+    role: c
+    id: 242
+    totalSize: 11077
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.TilemapModule.cpp
+    role: cpp
+    id: 243
+    totalSize: 2423
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.TilemapModule_CodeGen.c
+    role: c
+    id: 244
+    totalSize: 366
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.UI.cpp
+    role: cpp
+    id: 245
+    totalSize: 1426508
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.UIElementsModule.cpp
+    role: cpp
+    id: 246
+    totalSize: 2003860
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.UIElementsModule_CodeGen.c
+    role: c
+    id: 247
+    totalSize: 2262421
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.UIElementsModule__1.cpp
+    role: cpp
+    id: 248
+    totalSize: 1686093
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.UIElementsModule__10.cpp
+    role: cpp
+    id: 249
+    totalSize: 1975838
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.UIElementsModule__11.cpp
+    role: cpp
+    id: 250
+    totalSize: 2095675
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.UIElementsModule__12.cpp
+    role: cpp
+    id: 251
+    totalSize: 1913704
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.UIElementsModule__13.cpp
+    role: cpp
+    id: 252
+    totalSize: 2140925
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.UIElementsModule__14.cpp
+    role: cpp
+    id: 253
+    totalSize: 1410558
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.UIElementsModule__15.cpp
+    role: cpp
+    id: 254
+    totalSize: 1383566
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.UIElementsModule__16.cpp
+    role: cpp
+    id: 255
+    totalSize: 1241644
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.UIElementsModule__17.cpp
+    role: cpp
+    id: 256
+    totalSize: 1596431
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.UIElementsModule__18.cpp
+    role: cpp
+    id: 257
+    totalSize: 1214361
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.UIElementsModule__19.cpp
+    role: cpp
+    id: 258
+    totalSize: 781870
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.UIElementsModule__2.cpp
+    role: cpp
+    id: 259
+    totalSize: 1913824
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.UIElementsModule__3.cpp
+    role: cpp
+    id: 260
+    totalSize: 1742378
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.UIElementsModule__4.cpp
+    role: cpp
+    id: 261
+    totalSize: 1555256
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.UIElementsModule__5.cpp
+    role: cpp
+    id: 262
+    totalSize: 1808685
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.UIElementsModule__6.cpp
+    role: cpp
+    id: 263
+    totalSize: 1966660
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.UIElementsModule__7.cpp
+    role: cpp
+    id: 264
+    totalSize: 1522722
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.UIElementsModule__8.cpp
+    role: cpp
+    id: 265
+    totalSize: 1493439
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.UIElementsModule__9.cpp
+    role: cpp
+    id: 266
+    totalSize: 1434825
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.UIModule.cpp
+    role: cpp
+    id: 267
+    totalSize: 305294
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.UIModule_CodeGen.c
+    role: c
+    id: 268
+    totalSize: 27772
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.UI_CodeGen.c
+    role: c
+    id: 269
+    totalSize: 343220
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.UI__1.cpp
+    role: cpp
+    id: 270
+    totalSize: 1190083
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.UI__2.cpp
+    role: cpp
+    id: 271
+    totalSize: 1284958
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.UI__3.cpp
+    role: cpp
+    id: 272
+    totalSize: 1306765
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.UnityAnalyticsCommonModule.cpp
+    role: cpp
+    id: 273
+    totalSize: 323027
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.UnityAnalyticsCommonModule_CodeGen.c
+    role: c
+    id: 274
+    totalSize: 13485
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.VRModule.cpp
+    role: cpp
+    id: 275
+    totalSize: 12746
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.VRModule_CodeGen.c
+    role: c
+    id: 276
+    totalSize: 1041
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.XRModule.cpp
+    role: cpp
+    id: 277
+    totalSize: 184530
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine.XRModule_CodeGen.c
+    role: c
+    id: 278
+    totalSize: 19783
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/UnityEngine_CodeGen.c
+    role: c
+    id: 279
+    totalSize: 324
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/__Generated.cpp
+    role: cpp
+    id: 280
+    totalSize: 2981
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/il2cppOutput/__Generated_CodeGen.c
+    role: c
+    id: 281
+    totalSize: 798
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/analytics.json
+    role: json
+    id: 282
+    totalSize: 2754
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Assembly-CSharp.dll
+    role: dll
+    id: 283
+    totalSize: 11264
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Assembly-CSharp.pdb
+    role: pdb
+    id: 284
+    totalSize: 17740
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Mono.Security.dll
+    role: dll
+    id: 285
+    totalSize: 8704
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/mscorlib.dll
+    role: dll
+    id: 286
+    totalSize: 1779200
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/System.Configuration.dll
+    role: dll
+    id: 287
+    totalSize: 4608
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/System.Core.dll
+    role: dll
+    id: 288
+    totalSize: 35328
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/System.dll
+    role: dll
+    id: 289
+    totalSize: 184320
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/System.Xml.dll
+    role: dll
+    id: 290
+    totalSize: 6656
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.InputSystem.dll
+    role: dll
+    id: 291
+    totalSize: 1101824
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.InputSystem.ForUI.dll
+    role: dll
+    id: 292
+    totalSize: 14848
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.InputSystem.ForUI.pdb
+    role: pdb
+    id: 293
+    totalSize: 17512
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.InputSystem.pdb
+    role: pdb
+    id: 294
+    totalSize: 410420
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.TextMeshPro.dll
+    role: dll
+    id: 295
+    totalSize: 441856
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.TextMeshPro.pdb
+    role: pdb
+    id: 296
+    totalSize: 183008
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AIModule.dll
+    role: dll
+    id: 297
+    totalSize: 10752
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AIModule.pdb
+    role: pdb
+    id: 298
+    totalSize: 9512
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AndroidJNIModule.dll
+    role: dll
+    id: 299
+    totalSize: 91136
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AndroidJNIModule.pdb
+    role: pdb
+    id: 300
+    totalSize: 43540
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AnimationModule.dll
+    role: dll
+    id: 301
+    totalSize: 24064
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AnimationModule.pdb
+    role: pdb
+    id: 302
+    totalSize: 14136
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AudioModule.dll
+    role: dll
+    id: 303
+    totalSize: 14336
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AudioModule.pdb
+    role: pdb
+    id: 304
+    totalSize: 10952
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.CoreModule.dll
+    role: dll
+    id: 305
+    totalSize: 400896
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.CoreModule.pdb
+    role: pdb
+    id: 306
+    totalSize: 150220
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.dll
+    role: dll
+    id: 307
+    totalSize: 73728
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.GridModule.dll
+    role: dll
+    id: 308
+    totalSize: 10240
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.GridModule.pdb
+    role: pdb
+    id: 309
+    totalSize: 9156
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.HierarchyCoreModule.dll
+    role: dll
+    id: 310
+    totalSize: 37376
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.HierarchyCoreModule.pdb
+    role: pdb
+    id: 311
+    totalSize: 20672
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.IMGUIModule.dll
+    role: dll
+    id: 312
+    totalSize: 101376
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.IMGUIModule.pdb
+    role: pdb
+    id: 313
+    totalSize: 46640
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.InputForUIModule.dll
+    role: dll
+    id: 314
+    totalSize: 39424
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.InputForUIModule.pdb
+    role: pdb
+    id: 315
+    totalSize: 23548
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.InputLegacyModule.dll
+    role: dll
+    id: 316
+    totalSize: 19968
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.InputLegacyModule.pdb
+    role: pdb
+    id: 317
+    totalSize: 12488
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.InputModule.dll
+    role: dll
+    id: 318
+    totalSize: 12800
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.InputModule.pdb
+    role: pdb
+    id: 319
+    totalSize: 10096
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.JSONSerializeModule.dll
+    role: dll
+    id: 320
+    totalSize: 12288
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.JSONSerializeModule.pdb
+    role: pdb
+    id: 321
+    totalSize: 9708
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.pdb
+    role: pdb
+    id: 322
+    totalSize: 11316
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.Physics2DModule.dll
+    role: dll
+    id: 323
+    totalSize: 19456
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.Physics2DModule.pdb
+    role: pdb
+    id: 324
+    totalSize: 11468
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.PhysicsModule.dll
+    role: dll
+    id: 325
+    totalSize: 25600
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.PhysicsModule.pdb
+    role: pdb
+    id: 326
+    totalSize: 14496
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.PropertiesModule.dll
+    role: dll
+    id: 327
+    totalSize: 114688
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.PropertiesModule.pdb
+    role: pdb
+    id: 328
+    totalSize: 50120
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.SharedInternalsModule.dll
+    role: dll
+    id: 329
+    totalSize: 16896
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.SharedInternalsModule.pdb
+    role: pdb
+    id: 330
+    totalSize: 11860
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.SpriteShapeModule.dll
+    role: dll
+    id: 331
+    totalSize: 10240
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.SpriteShapeModule.pdb
+    role: pdb
+    id: 332
+    totalSize: 9156
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.SubsystemsModule.dll
+    role: dll
+    id: 333
+    totalSize: 15360
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.SubsystemsModule.pdb
+    role: pdb
+    id: 334
+    totalSize: 11596
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TextCoreFontEngineModule.dll
+    role: dll
+    id: 335
+    totalSize: 38912
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TextCoreFontEngineModule.pdb
+    role: pdb
+    id: 336
+    totalSize: 18408
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TextCoreTextEngineModule.dll
+    role: dll
+    id: 337
+    totalSize: 307200
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TextCoreTextEngineModule.pdb
+    role: pdb
+    id: 338
+    totalSize: 127204
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TextRenderingModule.dll
+    role: dll
+    id: 339
+    totalSize: 20480
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TextRenderingModule.pdb
+    role: pdb
+    id: 340
+    totalSize: 11716
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TilemapModule.dll
+    role: dll
+    id: 341
+    totalSize: 10752
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TilemapModule.pdb
+    role: pdb
+    id: 342
+    totalSize: 9264
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UI.dll
+    role: dll
+    id: 343
+    totalSize: 263680
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UI.pdb
+    role: pdb
+    id: 344
+    totalSize: 135804
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UIElementsModule.dll
+    role: dll
+    id: 345
+    totalSize: 1643008
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UIElementsModule.pdb
+    role: pdb
+    id: 346
+    totalSize: 762608
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UIModule.dll
+    role: dll
+    id: 347
+    totalSize: 26112
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UIModule.pdb
+    role: pdb
+    id: 348
+    totalSize: 12184
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UnityAnalyticsCommonModule.dll
+    role: dll
+    id: 349
+    totalSize: 17920
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UnityAnalyticsCommonModule.pdb
+    role: pdb
+    id: 350
+    totalSize: 12940
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.VRModule.dll
+    role: dll
+    id: 351
+    totalSize: 10752
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.VRModule.pdb
+    role: pdb
+    id: 352
+    totalSize: 9876
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.XRModule.dll
+    role: dll
+    id: 353
+    totalSize: 22016
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.XRModule.pdb
+    role: pdb
+    id: 354
+    totalSize: 13324
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityLinkerToEditorData.json
+    role: json
+    id: 355
+    totalSize: 31443
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/Resources/unity
+      default resources
+    role: unity default resources
+    id: 356
+    totalSize: 3743124
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/setupSymbols.gradle
+    role: gradle
+    id: 357
+    totalSize: 5000
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/shared/keepUnitySymbols.gradle
+    role: gradle
+    id: 358
+    totalSize: 1538
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/CMakeLists.txt
+    role: txt
+    id: 359
+    totalSize: 760
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/GAToUnityCallbacks.h
+    role: h
+    id: 360
+    totalSize: 2642
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/MacroEnd.h
+    role: h
+    id: 361
+    totalSize: 82
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/MacroHeaderBegin.h
+    role: h
+    id: 362
+    totalSize: 1004
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/MacroSourceBegin.h
+    role: h
+    id: 363
+    totalSize: 438
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAApplication.cpp
+    role: cpp
+    id: 364
+    totalSize: 15464
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAApplication.h
+    role: h
+    id: 365
+    totalSize: 4688
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAConfiguration.cpp
+    role: cpp
+    id: 366
+    totalSize: 3565
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAConfiguration.h
+    role: h
+    id: 367
+    totalSize: 1412
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGADebug.cpp
+    role: cpp
+    id: 368
+    totalSize: 4248
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGADebug.h
+    role: h
+    id: 369
+    totalSize: 2131
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAEntry.cpp
+    role: cpp
+    id: 370
+    totalSize: 4050
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAEvents.h
+    role: h
+    id: 371
+    totalSize: 8455
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAInput.cpp
+    role: cpp
+    id: 372
+    totalSize: 3711
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAInput.h
+    role: h
+    id: 373
+    totalSize: 3880
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAInputKeyEvent.cpp
+    role: cpp
+    id: 374
+    totalSize: 2515
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAInputMotionEvent.cpp
+    role: cpp
+    id: 375
+    totalSize: 10035
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGASoftKeyboard.cpp
+    role: cpp
+    id: 376
+    totalSize: 11453
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGASoftKeyboard.h
+    role: h
+    id: 377
+    totalSize: 2166
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGASoftKeyboardCallbacks.h
+    role: h
+    id: 378
+    totalSize: 698
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGATypes.h
+    role: h
+    id: 379
+    totalSize: 684
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAVersion.h
+    role: h
+    id: 380
+    totalSize: 782
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UnityToGACallbacks.h
+    role: h
+    id: 381
+    totalSize: 3900
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UnityToGAConfigurationCallbacks.h
+    role: h
+    id: 382
+    totalSize: 1693
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UnityToGAKeyEventCallbacks.h
+    role: h
+    id: 383
+    totalSize: 679
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UnityToGAMotionEventCallbacks.h
+    role: h
+    id: 384
+    totalSize: 2592
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/FramePacing/CMakeLists.txt
+    role: txt
+    id: 385
+    totalSize: 710
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/FramePacing/UnitySwappyWrapper.cpp
+    role: cpp
+    id: 386
+    totalSize: 3819
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/FramePacing/UnitySwappyWrapper.h
+    role: h
+    id: 387
+    totalSize: 3474
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/CMakeLists.txt
+    role: txt
+    id: 388
+    totalSize: 118
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/gradle/wrapper/gradle-wrapper.properties
+    role: properties
+    id: 389
+    totalSize: 77
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/java/com/unity3d/player/UnityPlayerGameActivity.java
+    role: java
+    id: 390
+    totalSize: 5522
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/unity-classes.jar
+    role: jar
+    id: 391
+    totalSize: 191359
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values/ids.xml
+    role: xml
+    id: 392
+    totalSize: 111
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values-v21/styles.xml
+    role: xml
+    id: 393
+    totalSize: 171
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values-v28/styles.xml
+    role: xml
+    id: 394
+    totalSize: 247
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values-v31/styles.xml
+    role: xml
+    id: 395
+    totalSize: 1201
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values/styles.xml
+    role: xml
+    id: 396
+    totalSize: 703
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values/colors.xml
+    role: xml
+    id: 397
+    totalSize: 132
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/values/strings.xml
+    role: xml
+    id: 398
+    totalSize: 112
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values/strings.xml
+    role: xml
+    id: 399
+    totalSize: 129
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values-v30/freeformwindow.xml
+    role: xml
+    id: 400
+    totalSize: 395
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values/freeformwindow.xml
+    role: xml
+    id: 401
+    totalSize: 359
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-mdpi/app_icon.png
+    role: png
+    id: 402
+    totalSize: 1536
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-ldpi/app_icon.png
+    role: png
+    id: 403
+    totalSize: 1153
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-hdpi/app_icon.png
+    role: png
+    id: 404
+    totalSize: 2356
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-xhdpi/app_icon.png
+    role: png
+    id: 405
+    totalSize: 3147
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-xxhdpi/app_icon.png
+    role: png
+    id: 406
+    totalSize: 5153
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-xxxhdpi/app_icon.png
+    role: png
+    id: 407
+    totalSize: 7228
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-ldpi/app_icon_round.png
+    role: png
+    id: 408
+    totalSize: 1153
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-mdpi/app_icon_round.png
+    role: png
+    id: 409
+    totalSize: 1536
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-hdpi/app_icon_round.png
+    role: png
+    id: 410
+    totalSize: 2356
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-xhdpi/app_icon_round.png
+    role: png
+    id: 411
+    totalSize: 3147
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-xxhdpi/app_icon_round.png
+    role: png
+    id: 412
+    totalSize: 5153
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-xxxhdpi/app_icon_round.png
+    role: png
+    id: 413
+    totalSize: 7228
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/arm64-v8a/libmain.so
+    role: so
+    id: 414
+    totalSize: 6728
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/arm64-v8a/libunity.so
+    role: so
+    id: 415
+    totalSize: 17132488
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/symbols/arm64-v8a/libmain.so
+    role: so
+    id: 416
+    totalSize: 8440
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/symbols/arm64-v8a/libil2cpp.so
+    role: so
+    id: 417
+    totalSize: 28779584
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/symbols/arm64-v8a/libunity.so
+    role: so
+    id: 418
+    totalSize: 5127592
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/unity_app_guid
+    role: unity_app_guid
+    id: 419
+    totalSize: 36
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/resources/META-INF/com.android.games.engine.build_fingerprint
+    role: build_fingerprint
+    id: 420
+    totalSize: 78
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/AndroidManifest.xml
+    role: xml
+    id: 421
+    totalSize: 458
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/AndroidManifest.xml
+    role: xml
+    id: 422
+    totalSize: 2623
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/build.gradle
+    role: gradle
+    id: 423
+    totalSize: 2104
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build.gradle
+    role: gradle
+    id: 424
+    totalSize: 1928
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/build.gradle
+    role: gradle
+    id: 425
+    totalSize: 815
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/gradle.properties
+    role: properties
+    id: 426
+    totalSize: 990
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/settings.gradle
+    role: gradle
+    id: 427
+    totalSize: 412
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/proguard-unity.txt
+    role: txt
+    id: 428
+    totalSize: 1669
+  - path: E:/ProjRep/ClickClick/Click/Library/Bee/Android/Prj/IL2CPP/Gradle/local.properties
+    role: properties
+    id: 429
+    totalSize: 95
+  - path: E:/ProjRep/ClickClick/Click/ClickClick.apk
+    role: APK
+    id: 430
+    totalSize: 27924616
+  - path: E:/ProjRep/ClickClick/Click/ClickClick-1.02-v1-IL2CPP.symbols.zip
+    role: Symbols
+    id: 431
+    totalSize: 11148763
+  m_BuildSteps:
+  - stepName: Build player
+    durationTicks: 81728990
+    depth: 0
+    messages: []
+  - stepName: Preprocess Player
+    durationTicks: 72980
+    depth: 1
+    messages: []
+  - stepName: Prepare For Build
+    durationTicks: 31129
+    depth: 1
+    messages:
+    - type: 2
+      content: PlayerSettings->Active Input Handling is set to Both, this is unsupported
+        on Android and might cause issues with input and application performance.
+        Please choose only one active input handling.
+  - stepName: ProducePlayerScriptAssemblies
+    durationTicks: 4012397
+    depth: 1
+    messages: []
+  - stepName: Prebuild Cleanup and Recompile
+    durationTicks: 2455063
+    depth: 2
+    messages: []
+  - stepName: Compile scripts
+    durationTicks: 2272123
+    depth: 3
+    messages: []
+  - stepName: Generate and validate platform script types
+    durationTicks: 81883
+    depth: 3
+    messages: []
+  - stepName: Verify Build setup
+    durationTicks: 314994
+    depth: 1
+    messages: []
+  - stepName: Check old data build
+    durationTicks: 283036
+    depth: 2
+    messages: []
+  - stepName: Set up scripts only build
+    durationTicks: 4942
+    depth: 2
+    messages: []
+  - stepName: Prepare assets for target platform
+    durationTicks: 69415
+    depth: 1
+    messages: []
+  - stepName: Prepare splash screen
+    durationTicks: 4472
+    depth: 1
+    messages:
+    - type: 3
+      content: Including Unity Splash Screen logo because 'Show Unity Logo' is enabled.
+  - stepName: Run script only build
+    durationTicks: 230735
+    depth: 1
+    messages: []
+  - stepName: Build scripts DLLs
+    durationTicks: 130136
+    depth: 2
+    messages: []
+  - stepName: GetSystemAssemblies
+    durationTicks: 6919
+    depth: 3
+    messages: []
+  - stepName: Postprocess built player
+    durationTicks: 76105692
+    depth: 1
+    messages:
+    - type: 2
+      content: Compressed texture Icon is used as icon. This might compromise visual
+        quality of the final image. Uncompressed format might be considered as better
+        import option.
+    - type: 2
+      content: Compressed texture Icon is used as icon. This might compromise visual
+        quality of the final image. Uncompressed format might be considered as better
+        import option.
+    - type: 2
+      content: Compressed texture Icon is used as icon. This might compromise visual
+        quality of the final image. Uncompressed format might be considered as better
+        import option.
+    - type: 2
+      content: Compressed texture Icon is used as icon. This might compromise visual
+        quality of the final image. Uncompressed format might be considered as better
+        import option.
+    - type: 2
+      content: Compressed texture Icon is used as icon. This might compromise visual
+        quality of the final image. Uncompressed format might be considered as better
+        import option.
+    - type: 2
+      content: Compressed texture Icon is used as icon. This might compromise visual
+        quality of the final image. Uncompressed format might be considered as better
+        import option.
+    - type: 2
+      content: Compressed texture Icon is used as icon. This might compromise visual
+        quality of the final image. Uncompressed format might be considered as better
+        import option.
+    - type: 2
+      content: Compressed texture Icon is used as icon. This might compromise visual
+        quality of the final image. Uncompressed format might be considered as better
+        import option.
+    - type: 2
+      content: Compressed texture Icon is used as icon. This might compromise visual
+        quality of the final image. Uncompressed format might be considered as better
+        import option.
+    - type: 2
+      content: Compressed texture Icon is used as icon. This might compromise visual
+        quality of the final image. Uncompressed format might be considered as better
+        import option.
+    - type: 2
+      content: Compressed texture Icon is used as icon. This might compromise visual
+        quality of the final image. Uncompressed format might be considered as better
+        import option.
+    - type: 2
+      content: Compressed texture Icon is used as icon. This might compromise visual
+        quality of the final image. Uncompressed format might be considered as better
+        import option.
+    - type: 0
+      content: "System.Exception: apkanalyzer failed to estimate the apk size. Output:\nException
+        in thread \"main\" java.lang.NoClassDefFoundError: javax/xml/bind/annotation/XmlSchema\r\n\tat
+        com.android.repository.api.SchemaModule$SchemaModuleVersion.<init>(SchemaModule.java:156)\r\n\tat
+        com.android.repository.api.SchemaModule.<init>(SchemaModule.java:75)\r\n\tat
+        com.android.sdklib.repository.AndroidSdkHandler.<clinit>(AndroidSdkHandler.java:81)\r\n\tat
+        com.android.tools.apk.analyzer.ApkAnalyzerCli.getAaptInvokerFromSdk(ApkAnalyzerCli.java:277)\r\n\tat
+        com.android.tools.apk.analyzer.ApkAnalyzerCli.main(ApkAnalyzerCli.java:129)\r\nCaused
+        by: java.lang.ClassNotFoundException: javax.xml.bind.annotation.XmlSchema\r\n\tat
+        java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)\r\n\tat
+        java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)\r\n\tat
+        java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)\r\n\t...
+        5 more\r\n\r\n\r\n\r\n  at Unity.BuildReportInspector.Mobile.AndroidUtilities.GetApkDownloadSize
+        (System.String applicationPath) [0x00113] in C:\\Users\\tarpo\\Downloads\\BuildReportInspector-master\\com.unity.build-report-inspector\\Editor\\Mobile\\AndroidUtilities.cs:252
+        \r\n  at Unity.BuildReportInspector.Mobile.AndroidUtilities.GetArchitectureInfo
+        (System.String applicationPath) [0x000ca] in C:\\Users\\tarpo\\Downloads\\BuildReportInspector-master\\com.unity.build-report-inspector\\Editor\\Mobile\\AndroidUtilities.cs:128
+        \r\n  at Unity.BuildReportInspector.Mobile.MobileAppendix..ctor (System.String
+        applicationPath) [0x000ad] in C:\\Users\\tarpo\\Downloads\\BuildReportInspector-master\\com.unity.build-report-inspector\\Editor\\Mobile\\MobileAppendix.cs:90
+        \r\n  at Unity.BuildReportInspector.Mobile.MobileHelper.GenerateMobileAppendix
+        (System.String applicationPath, System.String guid) [0x00017] in C:\\Users\\tarpo\\Downloads\\BuildReportInspector-master\\com.unity.build-report-inspector\\Editor\\Mobile\\MobileHelper.cs:77 "
+  - stepName: Initializing
+    durationTicks: 1996
+    depth: 2
+    messages: []
+  - stepName: Check gradle project collisions
+    durationTicks: 58
+    depth: 2
+    messages: []
+  - stepName: Preparing banner
+    durationTicks: 28
+    depth: 2
+    messages: []
+  - stepName: Setup incremental player build
+    durationTicks: 628617
+    depth: 2
+    messages: []
+  - stepName: Incremental player build
+    durationTicks: 2362583
+    depth: 2
+    messages: []
+  - stepName: Report output files
+    durationTicks: 312403
+    depth: 2
+    messages: []
+  - stepName: Calling IPostGenerateGradleAndroidProject callbacks
+    durationTicks: 6575
+    depth: 2
+    messages: []
+  - stepName: Validate Gradle Project
+    durationTicks: 2238
+    depth: 2
+    messages: []
+  - stepName: Cloud Diagnostics Symbol Upload
+    durationTicks: 40
+    depth: 2
+    messages: []
+  - stepName: Building Gradle project
+    durationTicks: 49064563
+    depth: 2
+    messages: []
+  - stepName: Building Gradle Symbols
+    durationTicks: 15529559
+    depth: 2
+    messages: []
+  - stepName: Processing Mapping File
+    durationTicks: 373
+    depth: 2
+    messages: []
+  - stepName: Moving output package(s)
+    durationTicks: 3005474
+    depth: 2
+    messages: []
+  - stepName: Checking Symbols size
+    durationTicks: 1237
+    depth: 2
+    messages: []
+  m_Appendices:
+  - {fileID: -4280874408359693052}
+  - {fileID: -6396456080512639786}
+  - {fileID: -1456332880046194716}
+  - {fileID: -6754052511590903647}
+  - {fileID: 2015288636693719518}
+--- !u!1521398425 &2015288636693719518
+VideoBuildInfo:
+  m_VideoClipCount: 0
+  m_IsVideoModuleDisabled: 0

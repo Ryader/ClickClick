@@ -1,0 +1,8 @@
+E:/ProjRep/ClickClick/Click/.utmp/RelWithDebInfo/5i5oz2x2/arm64-v8a/CMakeFiles/edit_cache.dir
+E:/ProjRep/ClickClick/Click/.utmp/RelWithDebInfo/5i5oz2x2/arm64-v8a/CMakeFiles/rebuild_cache.dir
+E:/ProjRep/ClickClick/Click/.utmp/RelWithDebInfo/5i5oz2x2/arm64-v8a/GameActivity/CMakeFiles/game.dir
+E:/ProjRep/ClickClick/Click/.utmp/RelWithDebInfo/5i5oz2x2/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+E:/ProjRep/ClickClick/Click/.utmp/RelWithDebInfo/5i5oz2x2/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
+E:/ProjRep/ClickClick/Click/.utmp/RelWithDebInfo/5i5oz2x2/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir
+E:/ProjRep/ClickClick/Click/.utmp/RelWithDebInfo/5i5oz2x2/arm64-v8a/FramePacing/CMakeFiles/edit_cache.dir
+E:/ProjRep/ClickClick/Click/.utmp/RelWithDebInfo/5i5oz2x2/arm64-v8a/FramePacing/CMakeFiles/rebuild_cache.dir

@@ -1,31 +1,14 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp:
+    - CrazyGames.CrazyBanner
+    - CrazyGames.CrazySettings
     Assembly-CSharp.dll:
     - ClickMain
-    - DeviceScaleManager
+    - CrazyGames.CrazySettings
     - Menu
     - Obj
-    - YG.InfoYG
-    - YG.ViewingAdsYG
-    - YG.YandexGame
-    Unity.2D.Animation.Editor.dll:
-    - UnityEditor.U2D.Animation.BoneGizmo
-    Unity.2D.Animation.Runtime.dll:
-    - UnityEngine.U2D.Animation.BufferManager
-    - UnityEngine.U2D.Animation.DeformationManager
-    - UnityEngine.U2D.Animation.DeformationManagerUpdater
-    Unity.2D.IK.Editor.dll:
-    - UnityEditor.U2D.IK.IKEditorManager
-    Unity.2D.Sprite.Editor.dll:
-    - UnityEditor.U2D.Sprites.SpriteEditorWindow
-    Unity.2D.Tilemap.Editor.dll:
-    - UnityEditor.Tilemaps.GridPaintingState
-    - UnityEditor.Tilemaps.GridPaletteBrushes
-    - UnityEditor.Tilemaps.GridPalettes
-    - UnityEditor.Tilemaps.SceneViewGridManager
-    - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
-    - UnityEditor.Tilemaps.TileDragAndDropManager
-    - UnityEditor.Tilemaps.TilemapPrefabStageHelper
+    - SLider
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputActionAsset
     - UnityEngine.InputSystem.InputActionReference
@@ -110,6 +93,8 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
+    Unity.Timeline.Editor.dll:
+    - TimelinePreferences
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.CommandLineTest.RunData
@@ -136,20 +121,8 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Slider
   serializedClasses:
-    Assembly-CSharp:
-    - YG.InfoYG/CSVTranslate
-    - YG.InfoYG/Fonts
-    - YG.InfoYG/FontsSizeCorrect
-    - YG.InfoYG/Languages
-    - YG.InfoYG/PlayerInfoSimulation
-    - YG.InfoYG/QuitGameMethod
-    - YG.Utils.LB.LBData
-    - YG.Utils.LB.LBPlayerData
-    - YG.Utils.LB.LBThisPlayerData
-    - YG.Utils.Pay.Purchase
-    - YG.ViewingAdsYG/ClosingADValues
-    - YG.ViewingAdsYG/CustomEvents
     Unity.InputSystem:
     - UnityEngine.InputSystem.InputAction
     - UnityEngine.InputSystem.InputActionMap
@@ -235,7 +208,6 @@ ScriptsOnlyBuild:
     - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
     - UnityEngine.Events.PersistentListenerMode
-    - UnityEngine.Events.UnityEvent
     - UnityEngine.RectOffset
     - UnityEngine.Rendering.RenderPipelineGraphicsSettingsCollection
     UnityEngine.TextCoreFontEngineModule:
@@ -257,6 +229,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Navigation
     - UnityEngine.UI.ScrollRect/ScrollRectEvent
     - UnityEngine.UI.Scrollbar/ScrollEvent
+    - UnityEngine.UI.Slider/SliderEvent
     - UnityEngine.UI.SpriteState
     - UnityEngine.UI.Toggle/ToggleEvent
   methodsToPreserve:
@@ -328,133 +301,133 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 28114}
+      Script: {instanceID: 1818}
     - Class: 114
-      Script: {instanceID: 28264}
+      Script: {instanceID: 26546}
     - Class: 114
-      Script: {instanceID: 28266}
+      Script: {instanceID: 26660}
     - Class: 114
-      Script: {instanceID: 28318}
+      Script: {instanceID: 26662}
     - Class: 114
-      Script: {instanceID: 28600}
+      Script: {instanceID: 26704}
     - Class: 114
-      Script: {instanceID: 28658}
+      Script: {instanceID: 26944}
     - Class: 114
-      Script: {instanceID: 29016}
+      Script: {instanceID: 26996}
     - Class: 114
-      Script: {instanceID: 29080}
+      Script: {instanceID: 27290}
     - Class: 114
-      Script: {instanceID: 29396}
+      Script: {instanceID: 27344}
     - Class: 114
-      Script: {instanceID: 29602}
+      Script: {instanceID: 27602}
     - Class: 114
-      Script: {instanceID: 29632}
+      Script: {instanceID: 27776}
     - Class: 114
-      Script: {instanceID: 29766}
+      Script: {instanceID: 27920}
     - Class: 114
-      Script: {instanceID: 29848}
+      Script: {instanceID: 27982}
     - Class: 114
-      Script: {instanceID: 30070}
+      Script: {instanceID: 28106}
     - Class: 114
-      Script: {instanceID: 30260}
+      Script: {instanceID: 28178}
     - Class: 114
-      Script: {instanceID: 30594}
+      Script: {instanceID: 28348}
     - Class: 114
-      Script: {instanceID: 30816}
+      Script: {instanceID: 28640}
     - Class: 114
-      Script: {instanceID: 30956}
+      Script: {instanceID: 28812}
     - Class: 114
-      Script: {instanceID: 31454}
+      Script: {instanceID: 28932}
     - Class: 114
-      Script: {instanceID: 31492}
+      Script: {instanceID: 29420}
     - Class: 114
-      Script: {instanceID: 31508}
+      Script: {instanceID: 29508}
     - Class: 114
-      Script: {instanceID: 31610}
+      Script: {instanceID: 29776}
     - Class: 114
-      Script: {instanceID: 31914}
+      Script: {instanceID: 30066}
     - Class: 114
-      Script: {instanceID: 32254}
+      Script: {instanceID: 30154}
     - Class: 114
-      Script: {instanceID: 32362}
+      Script: {instanceID: 30208}
     - Class: 114
-      Script: {instanceID: 32418}
+      Script: {instanceID: 30238}
     - Class: 114
-      Script: {instanceID: 32456}
+      Script: {instanceID: 30282}
     - Class: 114
-      Script: {instanceID: 32518}
+      Script: {instanceID: 30326}
     - Class: 114
-      Script: {instanceID: 32552}
+      Script: {instanceID: 30362}
     - Class: 114
-      Script: {instanceID: 32590}
+      Script: {instanceID: 30778}
     - Class: 114
-      Script: {instanceID: 33086}
+      Script: {instanceID: 30812}
     - Class: 114
-      Script: {instanceID: 33130}
+      Script: {instanceID: 30864}
     - Class: 114
-      Script: {instanceID: 33186}
+      Script: {instanceID: 31214}
     - Class: 114
-      Script: {instanceID: 33604}
+      Script: {instanceID: 31336}
     - Class: 114
-      Script: {instanceID: 33752}
+      Script: {instanceID: 31482}
     - Class: 114
-      Script: {instanceID: 33916}
+      Script: {instanceID: 31564}
     - Class: 114
-      Script: {instanceID: 34012}
+      Script: {instanceID: 31954}
     - Class: 114
-      Script: {instanceID: 34466}
+      Script: {instanceID: 31962}
     - Class: 114
-      Script: {instanceID: 34478}
+      Script: {instanceID: 32118}
     - Class: 114
-      Script: {instanceID: 34676}
+      Script: {instanceID: 32234}
     - Class: 114
-      Script: {instanceID: 34792}
+      Script: {instanceID: 32242}
     - Class: 114
-      Script: {instanceID: 34802}
+      Script: {instanceID: 32346}
     - Class: 114
-      Script: {instanceID: 34922}
+      Script: {instanceID: 32410}
     - Class: 114
-      Script: {instanceID: 34996}
+      Script: {instanceID: 32618}
     - Class: 114
-      Script: {instanceID: 35230}
+      Script: {instanceID: 32736}
     - Class: 114
-      Script: {instanceID: 35366}
+      Script: {instanceID: 32772}
     - Class: 114
-      Script: {instanceID: 35406}
+      Script: {instanceID: 32890}
     - Class: 114
-      Script: {instanceID: 35554}
+      Script: {instanceID: 32960}
     - Class: 114
-      Script: {instanceID: 35640}
+      Script: {instanceID: 32976}
     - Class: 114
-      Script: {instanceID: 35664}
+      Script: {instanceID: 33294}
     - Class: 114
-      Script: {instanceID: 36046}
+      Script: {instanceID: 33348}
     - Class: 114
-      Script: {instanceID: 36112}
+      Script: {instanceID: 33396}
     - Class: 114
-      Script: {instanceID: 36172}
+      Script: {instanceID: 33466}
     - Class: 114
-      Script: {instanceID: 36252}
+      Script: {instanceID: 33480}
     - Class: 114
-      Script: {instanceID: 36274}
+      Script: {instanceID: 33554}
     - Class: 114
-      Script: {instanceID: 36320}
+      Script: {instanceID: 33580}
     - Class: 114
-      Script: {instanceID: 36360}
+      Script: {instanceID: 33702}
     - Class: 114
-      Script: {instanceID: 36398}
+      Script: {instanceID: 33784}
     - Class: 114
-      Script: {instanceID: 36550}
+      Script: {instanceID: 33856}
     - Class: 114
-      Script: {instanceID: 36640}
+      Script: {instanceID: 34014}
     - Class: 114
-      Script: {instanceID: 36722}
+      Script: {instanceID: 34612}
     - Class: 114
-      Script: {instanceID: 36906}
+      Script: {instanceID: 34662}
     - Class: 114
-      Script: {instanceID: 37682}
+      Script: {instanceID: 37400}
     - Class: 114
-      Script: {instanceID: 39162}
+      Script: {instanceID: 37452}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -482,22 +455,16 @@ ScriptsOnlyBuild:
     className: UniversalRenderPipelineAsset
   - hash:
       serializedVersion: 2
+      Hash: ccdb63d94f7c23c36f121c8cd078e0a8
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Menu
+  - hash:
+      serializedVersion: 2
       Hash: 95c8a8c68e664d4868755f06e7c55997
     assemblyName: Unity.RenderPipelines.Universal.Runtime
     namespaceName: UnityEngine.Rendering.Universal
     className: DepthOfField
-  - hash:
-      serializedVersion: 2
-      Hash: 836b03e4a42bfd77fe9bf423097dc249
-    assemblyName: Assembly-CSharp
-    namespaceName: YG.Example
-    className: YandexMetricaExample
-  - hash:
-      serializedVersion: 2
-      Hash: 80aeb876b0e95f6256bbfcbf33e26e84
-    assemblyName: Unity.2D.IK.Runtime
-    namespaceName: UnityEngine.U2D.IK
-    className: LimbSolver2D
   - hash:
       serializedVersion: 2
       Hash: f5df081962c06a171f380eb236cd1f3c
@@ -518,12 +485,6 @@ ScriptsOnlyBuild:
     className: OnScreenStick
   - hash:
       serializedVersion: 2
-      Hash: 9492ccb42f7bde5fc36ee46ffaae1d15
-    assemblyName: Assembly-CSharp
-    namespaceName: YG
-    className: LanguageYG
-  - hash:
-      serializedVersion: 2
       Hash: e8fd74e57e72e8e4ef28792881adb864
     assemblyName: Unity.RenderPipelines.Core.Runtime
     namespaceName: UnityEngine.Rendering.UI
@@ -534,12 +495,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Core.Runtime
     namespaceName: UnityEngine.Rendering.UI
     className: DebugUIHandlerPanel
-  - hash:
-      serializedVersion: 2
-      Hash: 4aba280041458e93d029a88ed0d3378a
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: AdNotificationYG
   - hash:
       serializedVersion: 2
       Hash: cf62aad97f6c2dd5d482e2509c6c9528
@@ -554,22 +509,10 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
-      Hash: e20a6de5f1fd1dfae6f1186e8f77c3d9
-    assemblyName: Unity.2D.Animation.Runtime
-    namespaceName: UnityEngine.U2D.Animation
-    className: SpriteResolver
-  - hash:
-      serializedVersion: 2
       Hash: 61319095e40c0cbfeeb89f99a1cdd4fb
     assemblyName: Unity.RenderPipelines.Universal.2D.Runtime
     namespaceName: UnityEngine.Rendering.Universal
     className: CinemachineUniversalPixelPerfect
-  - hash:
-      serializedVersion: 2
-      Hash: 29362692ab8b7c46bfb7c8cb42bfe5b4
-    assemblyName: Unity.2D.Animation.Runtime
-    namespaceName: UnityEngine.U2D.Animation
-    className: SpriteLibrarySourceAsset
   - hash:
       serializedVersion: 2
       Hash: ed8e62f07ec878233f5493a335003493
@@ -582,12 +525,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Core.Runtime
     namespaceName: UnityEngine.Rendering.UI
     className: DebugUIHandlerMessageBox
-  - hash:
-      serializedVersion: 2
-      Hash: ec59bc56f69d3d13d1fc9d3e087fb56d
-    assemblyName: Unity.2D.Animation.Runtime
-    namespaceName: UnityEngine.U2D.Animation
-    className: SkeletonAsset
   - hash:
       serializedVersion: 2
       Hash: 5a4aa2850fe11587f47e34c270c7fd22
@@ -620,24 +557,6 @@ ScriptsOnlyBuild:
     className: BaseInputOverride
   - hash:
       serializedVersion: 2
-      Hash: c27554f9feec0ec62923b4c200a63b9e
-    assemblyName: Unity.2D.IK.Runtime
-    namespaceName: UnityEngine.U2D.IK
-    className: CCDSolver2D
-  - hash:
-      serializedVersion: 2
-      Hash: 5853689a3479946eee2b8547c1f13d3c
-    assemblyName: Unity.2D.Animation.Runtime
-    namespaceName: UnityEngine.U2D.Animation
-    className: DeformationManagerUpdater
-  - hash:
-      serializedVersion: 2
-      Hash: 0065e74c24e26b666a3d6e4d1e9c729b
-    assemblyName: Assembly-CSharp
-    namespaceName: YG
-    className: GraphicSettingsYG
-  - hash:
-      serializedVersion: 2
       Hash: febcfbf0a0d85e37808a3740e3c2c6fa
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
@@ -650,28 +569,10 @@ ScriptsOnlyBuild:
     className: PlayerInputEditor
   - hash:
       serializedVersion: 2
-      Hash: e476827c858c3256a3ea517131918308
-    assemblyName: Assembly-CSharp
-    namespaceName: YG.Example
-    className: OpenAuthorizationDialog
-  - hash:
-      serializedVersion: 2
-      Hash: a119221a1c3d590645a52df2cbebb41c
-    assemblyName: Unity.2D.Tilemap.Extras
-    namespaceName: UnityEngine
-    className: HexagonalRuleTile
-  - hash:
-      serializedVersion: 2
       Hash: 4392bfff79efe0630144f16ea4d656ab
     assemblyName: Unity.RenderPipelines.Core.Runtime
     namespaceName: UnityEngine.Rendering.UI
     className: DebugUIHandlerObjectList
-  - hash:
-      serializedVersion: 2
-      Hash: e08eae2c49a21cbff966e6ca8f176f10
-    assemblyName: Assembly-CSharp
-    namespaceName: YG
-    className: PromptYG
   - hash:
       serializedVersion: 2
       Hash: daeac1347f8039f61cd4017ff33bd3c6
@@ -686,28 +587,10 @@ ScriptsOnlyBuild:
     className: PanelRaycaster
   - hash:
       serializedVersion: 2
-      Hash: c6695c5e8dd3b1605d4d2c16b8ea4bdc
-    assemblyName: Assembly-CSharp
-    namespaceName: YG.Insides
-    className: ConfigYG
-  - hash:
-      serializedVersion: 2
       Hash: f99ce8526ec148f29051c0a9dced1a03
     assemblyName: Unity.RenderPipelines.Universal.Runtime
     namespaceName: UnityEngine.Rendering.Universal
     className: UniversalRenderPipelineGlobalSettings
-  - hash:
-      serializedVersion: 2
-      Hash: 709e7a14fd69c48de1a0f460ef868042
-    assemblyName: Unity.2D.Tilemap.Extras
-    namespaceName: UnityEngine.Tilemaps
-    className: AdvancedRuleOverrideTile
-  - hash:
-      serializedVersion: 2
-      Hash: 3fb918195db6998e035d10d6abb5a892
-    assemblyName: Assembly-CSharp
-    namespaceName: YG.Example
-    className: SwitchSceneTest
   - hash:
       serializedVersion: 2
       Hash: 682dfc653b22feea53b38adb3bc66414
@@ -728,12 +611,6 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: dd0d6c663a70a021288c321392464a20
-    assemblyName: Unity.2D.SpriteShape.Runtime
-    namespaceName: UnityEngine.U2D
-    className: SpriteShapeController
-  - hash:
-      serializedVersion: 2
       Hash: 20a120e55ad3ab65556328d5fd8309dd
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -744,18 +621,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Core.Runtime
     namespaceName: UnityEngine.Rendering.UI
     className: DebugUIHandlerRow
-  - hash:
-      serializedVersion: 2
-      Hash: fb91e6d6eeb6971ad1ecc2c91f9d594a
-    assemblyName: Assembly-CSharp
-    namespaceName: YG
-    className: TimerBeforeAdsYG
-  - hash:
-      serializedVersion: 2
-      Hash: 165e174381131f52522586d22ebfdf39
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Menu
   - hash:
       serializedVersion: 2
       Hash: 2bbd05175d4cdd21e24f9716cdd24f83
@@ -854,22 +719,10 @@ ScriptsOnlyBuild:
     className: FilmGrain
   - hash:
       serializedVersion: 2
-      Hash: 47d50f529890b9237021f88334dc1cf6
-    assemblyName: Unity.2D.Animation.Runtime
-    namespaceName: UnityEngine.U2D.Animation
-    className: SpriteLibraryAsset
-  - hash:
-      serializedVersion: 2
       Hash: dd9dda1dfd39e605c49e72003342ef5d
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Image
-  - hash:
-      serializedVersion: 2
-      Hash: d75df0b83c74ab3d9088964ef8188507
-    assemblyName: Unity.2D.Animation.Runtime
-    namespaceName: UnityEngine.U2D.Animation
-    className: SpriteSkin
   - hash:
       serializedVersion: 2
       Hash: 0126f347d98d02424c7e030465a71ead
@@ -902,22 +755,10 @@ ScriptsOnlyBuild:
     className: ColorAdjustments
   - hash:
       serializedVersion: 2
-      Hash: 14f8c3da54a840e4c398ed3fa7b6057f
-    assemblyName: Unity.2D.SpriteShape.Runtime
-    namespaceName: 
-    className: SpriteShapeGeometryCache
-  - hash:
-      serializedVersion: 2
       Hash: 415316b9bbc4e339c901a46503e2790b
     assemblyName: Unity.RenderPipelines.Core.Runtime
     namespaceName: UnityEngine.Rendering
     className: VolumeProfile
-  - hash:
-      serializedVersion: 2
-      Hash: 73707dd24af053d88322ad9a735a180a
-    assemblyName: Unity.2D.Tilemap.Extras
-    namespaceName: UnityEngine.Tilemaps
-    className: GridInformation
   - hash:
       serializedVersion: 2
       Hash: 33f160a5c07e580c29aba2bd1e4db811
@@ -930,24 +771,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Core.Runtime
     namespaceName: UnityEngine.Rendering
     className: ObsoleteProbeVolumeAsset
-  - hash:
-      serializedVersion: 2
-      Hash: 467f4a5e5f0a57c9f502e4d66c72baf5
-    assemblyName: Unity.2D.Animation.Runtime
-    namespaceName: UnityEngine.U2D.Animation
-    className: SpriteSkinContainer
-  - hash:
-      serializedVersion: 2
-      Hash: b87547877f7bea0dd59c10bfb798b858
-    assemblyName: Unity.2D.Tilemap.Extras
-    namespaceName: UnityEngine
-    className: IsometricRuleTile
-  - hash:
-      serializedVersion: 2
-      Hash: 5f27242e1ad2aadb1faa604dd779a464
-    assemblyName: Unity.2D.Animation.Runtime
-    namespaceName: UnityEngine.U2D.Animation
-    className: SpriteLibrary
   - hash:
       serializedVersion: 2
       Hash: 2f43860e745f8edade7bd381809e537b
@@ -984,12 +807,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
     className: EventSystem
-  - hash:
-      serializedVersion: 2
-      Hash: 03d622757d928e27cbed482d4696f44e
-    assemblyName: Assembly-CSharp
-    namespaceName: YG.Example
-    className: GetPlayerData
   - hash:
       serializedVersion: 2
       Hash: 0bc7ef1b7516f21320ec49bfd31eef2e
@@ -1040,30 +857,6 @@ ScriptsOnlyBuild:
     className: InputSystemUIInputModuleEditor
   - hash:
       serializedVersion: 2
-      Hash: 36cfdac1983d8bb7ad67c7cbe2df1a1d
-    assemblyName: Assembly-CSharp
-    namespaceName: YG
-    className: ActivityOnAuthorizationYG
-  - hash:
-      serializedVersion: 2
-      Hash: 7726e21ed35da752fdc6fab680227dc3
-    assemblyName: Assembly-CSharp
-    namespaceName: YG.Insides
-    className: CallingAnEvent
-  - hash:
-      serializedVersion: 2
-      Hash: 5280d4deb0e9853e190415eb1fd0b29c
-    assemblyName: Assembly-CSharp
-    namespaceName: YG
-    className: ViewingAdsYG
-  - hash:
-      serializedVersion: 2
-      Hash: f6fbff3fd0c4dd4f18398862c98420af
-    assemblyName: Assembly-CSharp
-    namespaceName: YG
-    className: InfoYG
-  - hash:
-      serializedVersion: 2
       Hash: 64756cee21909a7a459d5e05844baa97
     assemblyName: Unity.RenderPipelines.Universal.2D.Runtime
     namespaceName: UnityEngine.Rendering.Universal
@@ -1088,12 +881,6 @@ ScriptsOnlyBuild:
     className: ColorLookup
   - hash:
       serializedVersion: 2
-      Hash: a5f52e289070cca28d53aa2d26bf266a
-    assemblyName: Unity.2D.Animation.Runtime
-    namespaceName: UnityEngine.U2D.Animation
-    className: Bone
-  - hash:
-      serializedVersion: 2
       Hash: 915204dac8acad99f076d6e72ada0a0f
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -1110,12 +897,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Universal.Runtime
     namespaceName: UnityEngine.Rendering.Universal
     className: Bloom
-  - hash:
-      serializedVersion: 2
-      Hash: af770ad771658627851c64eafbf797f0
-    assemblyName: Unity.2D.Tilemap.Extras
-    namespaceName: UnityEngine.Tilemaps
-    className: AnimatedTile
   - hash:
       serializedVersion: 2
       Hash: 8fe6d4f095ce838f5396d1867140a9b6
@@ -1164,12 +945,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: ControlTrack
-  - hash:
-      serializedVersion: 2
-      Hash: e9db29e31ba60222fa1690a9445f34f5
-    assemblyName: Unity.2D.Tilemap.Extras
-    namespaceName: UnityEngine.Tilemaps
-    className: RuleOverrideTile
   - hash:
       serializedVersion: 2
       Hash: 3b5263a98bcc71d9a9d1d78a31b34ced
@@ -1268,22 +1043,10 @@ ScriptsOnlyBuild:
     className: PaniniProjection
   - hash:
       serializedVersion: 2
-      Hash: 7ae7eac2e9ea5e12f01dc07780c8c252
-    assemblyName: Assembly-CSharp
-    namespaceName: YG
-    className: ImageLoadYG
-  - hash:
-      serializedVersion: 2
       Hash: a9a9985bc600ab81586355efc506ee17
     assemblyName: Unity.RenderPipelines.Universal.Runtime
     namespaceName: UnityEngine.Rendering.Universal
     className: WhiteBalance
-  - hash:
-      serializedVersion: 2
-      Hash: 21d396433bc155436b5004301182fbfa
-    assemblyName: Unity.2D.PixelPerfect
-    namespaceName: UnityEngine.U2D
-    className: CinemachinePixelPerfect
   - hash:
       serializedVersion: 2
       Hash: 04b6685b6f724c0d6024e6b6f96c8202
@@ -1302,12 +1065,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Core.Runtime
     namespaceName: UnityEngine.Rendering.UI
     className: DebugUIHandlerIndirectToggle
-  - hash:
-      serializedVersion: 2
-      Hash: 3d848c6b1f4a6f68452949f054c9f805
-    assemblyName: Assembly-CSharp
-    namespaceName: YG
-    className: ReviewYG
   - hash:
       serializedVersion: 2
       Hash: 5874b789cd9832847c61ebfa803213af
@@ -1340,18 +1097,6 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerBitField
   - hash:
       serializedVersion: 2
-      Hash: 1e6aa1f905f62bcd0558226c29920412
-    assemblyName: Unity.2D.SpriteShape.Runtime
-    namespaceName: UnityEngine.U2D
-    className: SpriteShapeObjectPlacement
-  - hash:
-      serializedVersion: 2
-      Hash: 991def3bb38fe468342c445b01daabcf
-    assemblyName: Unity.2D.Animation.Runtime
-    namespaceName: UnityEngine.U2D.Animation
-    className: DeformationManager
-  - hash:
-      serializedVersion: 2
       Hash: 5ebc58ec194dd44630b25fcc270ad4af
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -1374,18 +1119,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: SignalAsset
-  - hash:
-      serializedVersion: 2
-      Hash: 17a71904793c41964b29cf2c93c6e006
-    assemblyName: Unity.2D.IK.Runtime
-    namespaceName: UnityEngine.U2D.IK
-    className: IKManager2D
-  - hash:
-      serializedVersion: 2
-      Hash: 41cf4f0e516f26acc8feddb86ba36034
-    assemblyName: Assembly-CSharp
-    namespaceName: YG.Example
-    className: LanguageExample
   - hash:
       serializedVersion: 2
       Hash: f295412bc00b58b9095a71e9764cc886
@@ -1418,12 +1151,6 @@ ScriptsOnlyBuild:
     className: InputSystemObject
   - hash:
       serializedVersion: 2
-      Hash: 07d4f3d2bc005e92e6e865566cc49cc5
-    assemblyName: Assembly-CSharp
-    namespaceName: YG
-    className: GetPlayerYG
-  - hash:
-      serializedVersion: 2
       Hash: 3e21c4fc1790539a1a5e53c6dae8099a
     assemblyName: Unity.RenderPipelines.Universal.Runtime
     namespaceName: UnityEngine.Rendering.Universal
@@ -1442,22 +1169,10 @@ ScriptsOnlyBuild:
     className: ProbeVolumesOptions
   - hash:
       serializedVersion: 2
-      Hash: bfd4af30d9804c73a547e494b337b534
-    assemblyName: Unity.2D.Tilemap.Extras
-    namespaceName: UnityEngine
-    className: RuleTile
-  - hash:
-      serializedVersion: 2
       Hash: d5cd7f207e91ca8336c65a577a6fb2a0
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: ScrollRect
-  - hash:
-      serializedVersion: 2
-      Hash: 7e73df2e130db3725a978d185ca406d1
-    assemblyName: Assembly-CSharp
-    namespaceName: YG
-    className: LeaderboardYG
   - hash:
       serializedVersion: 2
       Hash: 8dff8e9853297d341afa0c11f9091b59
@@ -1470,18 +1185,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Selectable
-  - hash:
-      serializedVersion: 2
-      Hash: 00bcfff150a932126a4ea840d0861a6b
-    assemblyName: Unity.2D.SpriteShape.Runtime
-    namespaceName: UnityEngine.U2D
-    className: SpriteShapeDefaultCreator
-  - hash:
-      serializedVersion: 2
-      Hash: fcdd700676e2799da3df19bde239e496
-    assemblyName: Assembly-CSharp
-    namespaceName: YG.Example
-    className: SaverTest
   - hash:
       serializedVersion: 2
       Hash: 51603d25dc8c39903df98901361f0b73
@@ -1514,12 +1217,6 @@ ScriptsOnlyBuild:
     className: TouchSimulation
   - hash:
       serializedVersion: 2
-      Hash: 83af02937d777af53d86b44259759d8b
-    assemblyName: Assembly-CSharp
-    namespaceName: YG.Example
-    className: NewResultLBExample
-  - hash:
-      serializedVersion: 2
       Hash: 33eb495d99aa9bea4dbe8b4c4e02c7bb
     assemblyName: Unity.InputSystem
     namespaceName: UnityEngine.InputSystem
@@ -1544,18 +1241,6 @@ ScriptsOnlyBuild:
     className: MultiplayerEventSystem
   - hash:
       serializedVersion: 2
-      Hash: 22130d378b859a59f2cb973162c02f89
-    assemblyName: Unity.2D.PixelPerfect
-    namespaceName: UnityEngine.U2D
-    className: PixelPerfectCamera
-  - hash:
-      serializedVersion: 2
-      Hash: 73bd9275941e8ccee72d690fdf887949
-    assemblyName: Assembly-CSharp
-    namespaceName: YG.Example
-    className: RewardedAd
-  - hash:
-      serializedVersion: 2
       Hash: 711fcd430ced52d118771c9c71e13238
     assemblyName: Unity.RenderPipelines.Universal.Runtime
     namespaceName: UnityEngine.Rendering.Universal
@@ -1568,22 +1253,10 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
-      Hash: 60f9a440bf84794557b7ee18d83186cb
-    assemblyName: Assembly-CSharp
-    namespaceName: YG.Example
-    className: DebugViewing
-  - hash:
-      serializedVersion: 2
       Hash: e18dfd2b913b09fbbb2405165a2e6a44
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TMP_Dropdown
-  - hash:
-      serializedVersion: 2
-      Hash: 86205e64488e9ad9e518eb29d5d32d2e
-    assemblyName: Assembly-CSharp
-    namespaceName: YG.Example
-    className: ReceivingPurchaseExample
   - hash:
       serializedVersion: 2
       Hash: 5382156409d7c462c67822a5ee8d6c85
@@ -1602,12 +1275,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TMP_ColorGradient
-  - hash:
-      serializedVersion: 2
-      Hash: 5bbf020a3db4fba9c727f0fd0c102e75
-    assemblyName: Assembly-CSharp
-    namespaceName: YG
-    className: DebuggingModeYG
   - hash:
       serializedVersion: 2
       Hash: fea660240dde52e08bd79d154e104e15
@@ -1664,12 +1331,6 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerContainer
   - hash:
       serializedVersion: 2
-      Hash: 4b39233d8d637ba64fa0c86d77a02cf4
-    assemblyName: Assembly-CSharp
-    namespaceName: YG
-    className: PurchaseYG
-  - hash:
-      serializedVersion: 2
       Hash: e49f64f6c7006f2a8a0e7674b5de1fae
     assemblyName: Unity.InputSystem
     namespaceName: UnityEngine.InputSystem.Editor
@@ -1680,18 +1341,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Universal.Runtime
     namespaceName: UnityEngine.Rendering.Universal
     className: MotionBlur
-  - hash:
-      serializedVersion: 2
-      Hash: 14fb963022965ffa004cc4ec810b9fdd
-    assemblyName: Unity.2D.Animation.Runtime
-    namespaceName: UnityEngine.U2D.Animation
-    className: BufferManager
-  - hash:
-      serializedVersion: 2
-      Hash: 6624412845f99f11ab8bf9d0dd9cd457
-    assemblyName: Assembly-CSharp
-    namespaceName: YG
-    className: LBPlayerDataYG
   - hash:
       serializedVersion: 2
       Hash: 90cf308600fb4aeb677786843453ec55
@@ -1736,12 +1385,6 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
-      Hash: 3ca7f2be93d5156a91693dfd4bd38e3f
-    assemblyName: Unity.2D.IK.Runtime
-    namespaceName: UnityEngine.U2D.IK
-    className: FabrikSolver2D
-  - hash:
-      serializedVersion: 2
       Hash: 8d7ab1303b1c14da5fdd62bf96ca6e89
     assemblyName: Unity.RenderPipelines.Core.Runtime
     namespaceName: UnityEngine.Rendering
@@ -1778,12 +1421,6 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
-      Hash: 0076dbba045323b763f9c5a06f4ad35e
-    assemblyName: Assembly-CSharp
-    namespaceName: YG
-    className: ConsumePurchasesYG
-  - hash:
-      serializedVersion: 2
       Hash: 5015c05a2113f320567617675a1ebe33
     assemblyName: Unity.InputSystem
     namespaceName: UnityEngine.InputSystem.Editor
@@ -1808,12 +1445,6 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAsset
   - hash:
       serializedVersion: 2
-      Hash: b13ff1368d6e15e6284ce378e8b18c17
-    assemblyName: Assembly-CSharp
-    namespaceName: YG
-    className: LangYGAdditionalText
-  - hash:
-      serializedVersion: 2
       Hash: c058ff8faaff3e0da63b5433ebfb40bc
     assemblyName: Unity.RenderPipelines.Universal.Runtime
     namespaceName: UnityEngine.Rendering.Universal
@@ -1832,13 +1463,7 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerFloatField
   - hash:
       serializedVersion: 2
-      Hash: 47b0a5f86986bee81e9510eda1d3f508
-    assemblyName: Assembly-CSharp
-    namespaceName: YG
-    className: YandexGame
-  - hash:
-      serializedVersion: 2
-      Hash: 8a936032d10a022f91eb56c592f990bd
+      Hash: 58c7478f040e438516463a358ab3d9a2
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ClickMain
@@ -1850,34 +1475,10 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerCanvas
   - hash:
       serializedVersion: 2
-      Hash: a27767ccffe7d0150d2f72c7094bc408
-    assemblyName: Assembly-CSharp
-    namespaceName: YG.Example
-    className: InitExample
-  - hash:
-      serializedVersion: 2
       Hash: 6a0b5b415c00f783202fd1ae2d556cb2
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: AudioPlayableAsset
-  - hash:
-      serializedVersion: 2
-      Hash: ff6f63e06936c0d30036df1e75202009
-    assemblyName: Assembly-CSharp
-    namespaceName: YG.Utils.Lang
-    className: LangMethods
-  - hash:
-      serializedVersion: 2
-      Hash: fd7983aadddd0b1b9f4ce82ed537bde5
-    assemblyName: Unity.2D.SpriteShape.Runtime
-    namespaceName: UnityEngine.U2D
-    className: SpriteShape
-  - hash:
-      serializedVersion: 2
-      Hash: 3202a3103561317463dd43264d2ab0bb
-    assemblyName: Assembly-CSharp
-    namespaceName: YG
-    className: PaymentsCatalogYG
   - hash:
       serializedVersion: 2
       Hash: 711ba963e2b245a25de71beeaeeeb658
@@ -1890,12 +1491,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Core.Runtime
     namespaceName: UnityEngine.Rendering.UI
     className: DebugUIHandlerToggle
-  - hash:
-      serializedVersion: 2
-      Hash: 1131d16e2402427640760042b5486b11
-    assemblyName: Unity.2D.IK.Runtime
-    namespaceName: UnityEngine.U2D.IK
-    className: CullingManager
   - hash:
       serializedVersion: 2
       Hash: 9f355e210e7950e47ad1391c7681435b
@@ -1934,12 +1529,6 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
-      Hash: dce4d58eb816b045f291c94817e5afc5
-    assemblyName: Assembly-CSharp
-    namespaceName: YG
-    className: ForVisualScriptYG
-  - hash:
-      serializedVersion: 2
       Hash: 3586e7f4fd3cb20328f9458141273dab
     assemblyName: Unity.RenderPipelines.Universal.Runtime
     namespaceName: UnityEngine.Rendering.Universal
@@ -1976,6 +1565,12 @@ ScriptsOnlyBuild:
     className: InputActionEditorWindow
   - hash:
       serializedVersion: 2
+      Hash: 49bd41c5885fdad833f0747c8087afcc
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: SLider
+  - hash:
+      serializedVersion: 2
       Hash: a90f6a00b23520788be7d89ee3b0773d
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -1988,10 +1583,124 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: e316dfcc33bf5a2d203dc8a8a872d150
+      Hash: aa67199679c6de1ec48881afcc1f9a2a
+    assemblyName: Assembly-CSharp
+    namespaceName: CrazyGames
+    className: DemoController
+  - hash:
+      serializedVersion: 2
+      Hash: 030c132bbf80d515c5b0452352ab5fb0
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: DeviceScaleManager
+    className: CrazyAdPreview
+  - hash:
+      serializedVersion: 2
+      Hash: 8b317b21ea29b318ace808618ca1982a
+    assemblyName: Assembly-CSharp
+    namespaceName: CrazyGames
+    className: UserModule
+  - hash:
+      serializedVersion: 2
+      Hash: 3b5a9c06842d253e2ab54958a79a69c2
+    assemblyName: Assembly-CSharp
+    namespaceName: CrazyGames
+    className: GameModule
+  - hash:
+      serializedVersion: 2
+      Hash: f498fce31901985e3118895d25adcae8
+    assemblyName: Assembly-CSharp
+    namespaceName: CrazyGames
+    className: BannerModuleDemo
+  - hash:
+      serializedVersion: 2
+      Hash: 5bf93c0a29530f7456392e0ed67b9eb4
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CrazySDKLoadingScene
+  - hash:
+      serializedVersion: 2
+      Hash: 812d318f134582d500525f30ce81c83f
+    assemblyName: Assembly-CSharp
+    namespaceName: CrazyGames
+    className: AnalyticsModuleDemo
+  - hash:
+      serializedVersion: 2
+      Hash: 21a9ec9581500682f3731ba83736848c
+    assemblyName: Assembly-CSharp
+    namespaceName: CrazyGames
+    className: AdModule
+  - hash:
+      serializedVersion: 2
+      Hash: c499756077989d65cdfce249ea021c65
+    assemblyName: Assembly-CSharp
+    namespaceName: CrazyGames
+    className: AnalyticsModule
+  - hash:
+      serializedVersion: 2
+      Hash: 4edf690018b64e5592a946d55a5fd3e5
+    assemblyName: Assembly-CSharp
+    namespaceName: CrazyGames
+    className: GameModuleDemo
+  - hash:
+      serializedVersion: 2
+      Hash: 90f1f0eeea367ca2b8d92f513fcd9731
+    assemblyName: Assembly-CSharp
+    namespaceName: CrazyGames
+    className: PlayerPrefsAPS
+  - hash:
+      serializedVersion: 2
+      Hash: 362a49c8ea5d1841dd7398982d14bd59
+    assemblyName: Assembly-CSharp
+    namespaceName: CrazyGames
+    className: BannerModule
+  - hash:
+      serializedVersion: 2
+      Hash: 410ed2a2dc29b592146130bf4be81c98
+    assemblyName: Assembly-CSharp
+    namespaceName: CrazyGames
+    className: UserModuleDemo
+  - hash:
+      serializedVersion: 2
+      Hash: 159eef630301b96c4bb3f4456f9ef335
+    assemblyName: Assembly-CSharp
+    namespaceName: CrazyGames
+    className: CrazySDK
+  - hash:
+      serializedVersion: 2
+      Hash: fee026150292598018eadb0324a0ff79
+    assemblyName: Assembly-CSharp
+    namespaceName: CrazyGames
+    className: CrazySettings
+  - hash:
+      serializedVersion: 2
+      Hash: 10c829c65b21d6330a8eb9d5c9b1a822
+    assemblyName: Assembly-CSharp
+    namespaceName: CrazyGames
+    className: MainDemoScene
+  - hash:
+      serializedVersion: 2
+      Hash: e0f3fa0a549fe8755bacb15428100fa3
+    assemblyName: Assembly-CSharp
+    namespaceName: CrazyGames
+    className: DataModule
+  - hash:
+      serializedVersion: 2
+      Hash: 923464429cab858bc1fb8feb7ed42725
+    assemblyName: Assembly-CSharp
+    namespaceName: CrazyGames
+    className: AdModuleDemo
+  - hash:
+      serializedVersion: 2
+      Hash: ad2d1639598eaf10f1274ce2f07112db
+    assemblyName: Assembly-CSharp
+    namespaceName: CrazyGames
+    className: CrazyBanner
+  - hash:
+      serializedVersion: 2
+      Hash: ae8f3484fc3b217794983bfca03ea78d
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: DataModuleDemo
   platform: 20
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

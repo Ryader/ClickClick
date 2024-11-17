@@ -1,2 +1,0 @@
-Build path: E:/ClickClick
-Build number: 21
