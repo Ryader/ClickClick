@@ -20,34 +20,33 @@ public class ClickMain2 : MonoBehaviour
     private int score = 0;
 
     private float borderLeftRight = 100f;
-    private float borderUpDown = 100f;
+    private float borderUpDown = 150;
     private float screenHeight;
     private float screenWidth;
 
-    [SerializeField] private float gameDuration = 30f; // ������������ ���� � ��������
+    [SerializeField] private float gameDuration = 30f;
     private float timeRemaining;
+
+    private float nextCleanupTime = 1f;
+    private const float CLEANUP_INTERVAL = 1f;
 
     private void Start()
     {
         pos = Vector2.zero;
         startText.gameObject.SetActive(true);
-        WinPanel.SetActive(false); // ������ ������ ������ � ������
+        WinPanel.SetActive(false);
         startText.text = countdownValue.ToString();
         InvokeRepeating(nameof(UpdateCountdown), 1f, 1f);
     }
 
     private void UpdateCountdown()
     {
-        if (countdownValue > 1)
+        countdownValue--;
+        startText.text = countdownValue.ToString();
+        if (countdownValue <= 0)
         {
-            countdownValue--;
-            startText.text = countdownValue.ToString();
-        }
-        else
-        {
-            startText.text = "Начали!";
-            Invoke(nameof(StartGame), 1f);
             CancelInvoke(nameof(UpdateCountdown));
+            StartGame();
         }
     }
 
@@ -55,7 +54,7 @@ public class ClickMain2 : MonoBehaviour
     {
         startText.gameObject.SetActive(false);
         gameStarted = true;
-        timeRemaining = gameDuration; // ���������� ���������� �����
+        timeRemaining = gameDuration;
         InvokeRepeating(nameof(Spawn), 0f, 0.3f);
     }
 
@@ -63,7 +62,12 @@ public class ClickMain2 : MonoBehaviour
     {
         if (!gameStarted) return;
 
-        // ���������� �������
+        if (Time.time >= nextCleanupTime)
+        {
+            CleanupSpawnedObjectsList();
+            nextCleanupTime = Time.time + CLEANUP_INTERVAL;
+        }
+
         if (timeRemaining > 0)
         {
             timeRemaining -= Time.deltaTime;
@@ -74,7 +78,6 @@ public class ClickMain2 : MonoBehaviour
             EndGame();
         }
 
-        // ���������� ������ ������
         if (Camera.main == null) return;
         screenHeight = Camera.main.orthographicSize * 2;
         screenWidth = screenHeight * Camera.main.aspect;
@@ -84,17 +87,20 @@ public class ClickMain2 : MonoBehaviour
     {
         gameStarted = false;
         CancelInvoke(nameof(Spawn));
-        WinPanel.SetActive(true); // �������� ������ ������
+        WinPanel.SetActive(true);
     }
 
     private void UpdateTimeText()
     {
-        timeText.text = $"Время: {Mathf.CeilToInt(timeRemaining)}"; // ���������� ���������� �����
+        timeText.text = $"Время: {Mathf.CeilToInt(timeRemaining)}";
     }
 
     private void Spawn()
     {
         if (objMain == null) return;
+
+        // Применяем масштаб из настроек к префабу
+        objMain.transform.localScale = Vector3.one * GameSettings.Instance.objectScale;
 
         Vector3 randomPos;
         float worldBorderOffsetX = borderLeftRight / Screen.width * screenWidth;
@@ -129,7 +135,52 @@ public class ClickMain2 : MonoBehaviour
         }));
 
         GameObject newObj = Instantiate(objMain, randomPos, Quaternion.identity);
+
+        //// Получаем ссылку на зеленый круг
+        //Transform greenCircle = newObj.transform.Find("Green");
+        //if (greenCircle != null)
+        //{
+        //    // Получаем размер красного круга
+        //    Transform redCircle = newObj.transform.Find("Red");
+        //    if (redCircle != null)
+        //    {
+        //        float redRadius = redCircle.localScale.x / 2f;
+
+        //        // Генерируем случайный угол и расстояние
+        //        float randomAngle = Random.Range(0f, 360f);
+        //        float randomDistance = Random.Range(0f, redRadius * 0.5f); // Используем половину радиуса, чтобы зеленый круг всегда был внутри красного
+
+        //        // Вычисляем позицию
+        //        float x = Mathf.Cos(randomAngle * Mathf.Deg2Rad) * randomDistance;
+        //        float y = Mathf.Sin(randomAngle * Mathf.Deg2Rad) * randomDistance;
+
+        //        // Устанавливаем позицию зеленого круга относительно центра
+        //        greenCircle.localPosition = new Vector3(x, y, 0);
+        //    }
+        //}
+
         spawnedObjects.Add(newObj);
+    }
+
+    private void CleanupSpawnedObjectsList()
+    {
+        spawnedObjects.RemoveAll(obj => obj == null);
+    }
+
+    public void Reset()
+    {
+        CancelInvoke();
+        ClearObjects();
+        score = 0;
+        UpdateScoreText();
+        gameStarted = false;
+        WinPanel.SetActive(false);
+        timeRemaining = gameDuration;
+        UpdateTimeText();
+        countdownValue = 3;
+        startText.gameObject.SetActive(true);
+        startText.text = countdownValue.ToString();
+        InvokeRepeating(nameof(UpdateCountdown), 1f, 1f);
     }
 
     private void OnEnable()
@@ -138,27 +189,26 @@ public class ClickMain2 : MonoBehaviour
         Click.performed += OnClickPerformed;
     }
 
-
-private void ClearObjects()
-{
-    for (int i = spawnedObjects.Count - 1; i >= 0; i--)
+    private void ClearObjects()
     {
-        var obj = spawnedObjects[i];
-        if (obj != null && obj.scene.isLoaded)
+        for (int i = spawnedObjects.Count - 1; i >= 0; i--)
         {
-            Destroy(obj);
-            spawnedObjects.RemoveAt(i);
+            var obj = spawnedObjects[i];
+            if (obj != null && obj.scene.isLoaded)
+            {
+                Destroy(obj);
+                spawnedObjects.RemoveAt(i);
+            }
         }
+        spawnedObjects.Clear();
     }
-    spawnedObjects.Clear();
-}
 
     private void OnDisable()
     {
         Click?.Disable();
         Click.performed -= OnClickPerformed;
-        CancelInvoke(); // Отменяем все повторяющиеся вызовы
-        ClearObjects(); // Очищаем объекты
+        CancelInvoke();
+        ClearObjects();
     }
 
     private void OnClickPerformed(InputAction.CallbackContext context)
@@ -166,19 +216,18 @@ private void ClearObjects()
         if (!gameStarted || Camera.main == null) return;
 
         Vector2 screenPosition = GetInputPosition();
-        Ray ray = Camera.main.ScreenPointToRay(screenPosition);
-        RaycastHit2D hit = Physics2D.GetRayIntersection(ray);
+        Vector3 worldPosition = Camera.main.ScreenToWorldPoint(new Vector3(screenPosition.x, screenPosition.y, 10f));
+        RaycastHit2D hit = Physics2D.Raycast(worldPosition, Vector2.zero);
 
         if (hit.collider != null)
         {
             GameObject obj = hit.collider.gameObject;
-
             if (obj.CompareTag("Green"))
                 score++;
             else if (obj.CompareTag("Red"))
                 score--;
 
-             spawnedObjects.Remove(obj.transform.root.gameObject); // Удаляем объект из списка
+            spawnedObjects.Remove(obj.transform.root.gameObject);
             Destroy(obj.transform.root.gameObject);
             UpdateScoreText();
         }
@@ -186,9 +235,9 @@ private void ClearObjects()
 
     private Vector2 GetInputPosition()
     {
-        if (Touchscreen.current != null && Touchscreen.current.primaryTouch.press.isPressed)
+        if (Mouse.current == null)
         {
-            return Touchscreen.current.primaryTouch.position.ReadValue();
+            return Vector2.zero;
         }
         return Mouse.current.position.ReadValue();
     }

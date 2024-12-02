@@ -10,16 +10,22 @@ public class Obj : MonoBehaviour
     private readonly Vector3 targetScale = new(0.1f, 0.1f, 0.1f);
     private Transform greenTransform;
 
+    [Header("Настройка анимации")]
+    [SerializeField] private AnimationCurve scaleCurve = AnimationCurve.EaseInOut(0f, 1f, 1f, 0f);
+
+    private Coroutine scaleCoroutine;
+    private bool isScaling;
+
     private void Start()
     {
-        Debug.Assert(mainObject != null, "Нет род. объекта");
-        Debug.Assert(greenObject != null, "Нет зелени");
+        Debug.Assert(mainObject != null, "Основной объект не найден");
+        Debug.Assert(greenObject != null, "Зелёный объект не найден");
 
         if (mainObject == null || greenObject == null)
             return;
 
         greenTransform = greenObject.transform;
-        StartCoroutine(ScaleOverTime());
+        StartScaling();
     }
 
     private IEnumerator ScaleOverTime()
@@ -29,15 +35,45 @@ public class Obj : MonoBehaviour
 
         while (elapsedTime < duration)
         {
-            greenTransform.localScale = Vector3.Lerp(initialScale, targetScale, elapsedTime / duration);
+            float normalizedTime = elapsedTime / duration;
+            float curveValue = scaleCurve.Evaluate(normalizedTime);
+            greenTransform.localScale = Vector3.Lerp(initialScale, targetScale, curveValue);
+
             elapsedTime += Time.deltaTime;
             yield return null;
         }
 
         greenTransform.localScale = targetScale;
+        isScaling = false;
 
-        // Уничтожаем основной объект только если он существует
         if (mainObject != null)
+        {
             Destroy(mainObject);
+        }
     }
+
+    private void OnDisable()
+    {
+        StopScaling();
+    }
+
+    public void StartScaling()
+    {
+        if (isScaling) return;
+
+        StopScaling();
+        scaleCoroutine = StartCoroutine(ScaleOverTime());
+        isScaling = true;
+    }
+
+    public void StopScaling()
+    {
+        if (scaleCoroutine != null)
+        {
+            StopCoroutine(scaleCoroutine);
+            scaleCoroutine = null;
+        }
+        isScaling = false;
+    }
+
 }

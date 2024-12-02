@@ -17,7 +17,7 @@ public class Menu2 : MonoBehaviour
         }
     }
 
-    public void Μενώ()
+    public void ΠΠµΠ½Ρ()
     {
         if (_Menu != null)
         {

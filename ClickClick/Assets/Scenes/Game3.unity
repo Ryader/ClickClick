@@ -371,7 +371,7 @@ MonoBehaviour:
   min: 100
   max: 300
   objSlider: {fileID: 5556816205074448919}
-  obj: {fileID: 1076870405131946553}
+  obj: {fileID: 0}
 --- !u!114 &829508327231595851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -446,55 +446,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5119991920867575038}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1076870405131946553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8539831330407806647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 174137733be78424391400a5c028f52c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 4325974842355049805}
-  startText: {fileID: 7298861591229413327}
-  objMain: {fileID: 8771417928173677177, guid: 99a1f93d474165a4ca44c6ce658e0403, type: 3}
-  Click:
-    m_Name: Click
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: f96d6f69-ce34-4f55-be32-611061a136cc
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 7f62204c-e519-4802-827c-77b3f96217bf
-      m_Path: <Mouse>/leftButton
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Click
-      m_Flags: 0
-    - m_Name: 
-      m_Id: 18323c13-9269-4e69-8fa5-784b9c1fb0c2
-      m_Path: <Touchscreen>/Press
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Click
-      m_Flags: 0
-    - m_Name: 
-      m_Id: c0ca85c1-73a9-4525-8841-3bdf3ecc1124
-      m_Path: <Touchscreen>/touch*/Press
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Click
-      m_Flags: 0
-    m_Flags: 0
-  pos: {x: 0, y: 0, z: 0}
 --- !u!224 &1198168708840835936
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1063,7 +1014,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8934077065918403430}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Menu2, Assembly-CSharp
         m_MethodName: "\u041C\u0435\u043D\u044E"
         m_Mode: 1
@@ -1777,9 +1728,9 @@ GameObject:
   - component: {fileID: 2664490412939634571}
   - component: {fileID: 8934077065918403429}
   - component: {fileID: 606589784503062058}
-  - component: {fileID: 8934077065918403430}
+  - component: {fileID: 8934077065918403431}
   - component: {fileID: 829508327231595851}
-  - component: {fileID: 1076870405131946553}
+  - component: {fileID: 8934077065918403430}
   - component: {fileID: 6278778483368986035}
   m_Layer: 5
   m_Name: Canvas
@@ -1820,19 +1771,47 @@ MonoBehaviour:
   m_GameObject: {fileID: 8539831330407806647}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 607927cf9a3fdc444bb551691253a31c, type: 3}
+  m_Script: {fileID: 11500000, guid: d2ed57a0e7da99a4eb321181bc8385f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
+  startText: {fileID: 0}
+  timeText: {fileID: 0}
+  WinPanel: {fileID: 0}
+  objMain: {fileID: 0}
+  Click:
+    m_Name: Click
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: e79f7028-83fb-4d10-885d-baa7055ff0f8
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  pos: {x: 0, y: 0, z: 0}
+  gameDuration: 30
+--- !u!114 &8934077065918403431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8539831330407806647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75a14a1d50c9b084abf874ba2afb989a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Esc:
     m_Name: Esc
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: c18d4d6b-6d58-43cb-a784-be2f2c1ccfc2
+    m_Id: a707aba4-370d-428c-8866-6b7c98750797
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 
-      m_Id: 48750514-d708-49b6-9732-8ca5127a03cf
+      m_Id: 02c1c648-c4cb-4ce5-8fac-6539169b5890
       m_Path: <Keyboard>/escape
       m_Interactions: 
       m_Processors: 

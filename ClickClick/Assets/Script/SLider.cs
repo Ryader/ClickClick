@@ -3,14 +3,10 @@ using UnityEngine.UI;
 
 public class SLider : MonoBehaviour
 {
-    public Slider slider;
-
-    public float min = 100;
-    public float max = 300;
-
+    [SerializeField] private Slider slider;
+    public float min = 100f;
+    public float max = 300f;
     public GameObject objSlider;
-    public ClickMain obj;
-
 
     private void Start()
     {
@@ -18,20 +14,36 @@ public class SLider : MonoBehaviour
         {
             slider.minValue = min;
             slider.maxValue = max;
-            slider.value = min; 
+            slider.value = min;
+            slider.onValueChanged.AddListener(OnSliderValueChanged);
         }
     }
 
     private void Update()
     {
-        if (slider != null && objSlider != null && obj != null)
+        if (slider == null || objSlider == null) return;
+
+        // Меняем размер объекта в меню
+        float sliderValue = slider.value;
+        objSlider.transform.localScale = new Vector2(sliderValue, sliderValue);
+
+        // Пересчитываем значение для игровых объектов (от 1 до 3)
+        float scaleValueGame = Mathf.Lerp(1f, 3f, (sliderValue - min) / (max - min));
+
+        // Сохраняем значение в настройках
+        GameSettings.Instance.objectScale = scaleValueGame;
+    }
+
+    private void OnDestroy()
+    {
+        if (slider != null)
         {
-            float sliderValue = slider.value;
-
-            objSlider.transform.localScale = new Vector2(sliderValue, sliderValue);
-
-            float scaleValueObj = Mathf.Lerp(1f, 3f, (sliderValue - min) / (max - min));
-            obj.objMain.transform.localScale = new Vector2(scaleValueObj, scaleValueObj);
+            slider.onValueChanged.RemoveListener(OnSliderValueChanged);
         }
+    }
+
+    private void OnSliderValueChanged(float value)
+    {
+        // Этот метод можно использовать, если нужна дополнительная логика при изменении значения слайдера
     }
 }

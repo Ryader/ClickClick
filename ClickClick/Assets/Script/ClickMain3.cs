@@ -24,14 +24,14 @@ public class ClickMain3 : MonoBehaviour
     private float screenHeight;
     private float screenWidth;
 
-    [SerializeField] private float gameDuration = 30f; // Длительность игры в секундах
+    [SerializeField] private float gameDuration = 30f; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     private float timeRemaining;
 
     private void Start()
     {
         pos = Vector2.zero;
         startText.gameObject.SetActive(true);
-        WinPanel.SetActive(false); // Скрыть панель победы в начале
+        WinPanel.SetActive(false); // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         startText.text = countdownValue.ToString();
         InvokeRepeating(nameof(UpdateCountdown), 1f, 1f);
     }
@@ -45,7 +45,7 @@ public class ClickMain3 : MonoBehaviour
         }
         else
         {
-            startText.text = "Начали!";
+            startText.text = "РќР°С‡Р°Р»Рё!";
             Invoke(nameof(StartGame), 1f);
             CancelInvoke(nameof(UpdateCountdown));
         }
@@ -55,15 +55,31 @@ public class ClickMain3 : MonoBehaviour
     {
         startText.gameObject.SetActive(false);
         gameStarted = true;
-        timeRemaining = gameDuration; // Установить оставшееся время
+        timeRemaining = gameDuration; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
         InvokeRepeating(nameof(Spawn), 0f, 0.3f);
     }
+
+    private float nextCleanupTime = 1f;
+    private const float CLEANUP_INTERVAL = 1f;
+
+    private void CleanupSpawnedObjectsList()
+    {
+        spawnedObjects.RemoveAll(obj => obj == null);
+    }
+
 
     private void Update()
     {
         if (!gameStarted) return;
 
-        // Обновление времени
+        if (Time.time >= nextCleanupTime)
+        {
+            CleanupSpawnedObjectsList();
+            nextCleanupTime = Time.time + CLEANUP_INTERVAL;
+        }
+
+
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         if (timeRemaining > 0)
         {
             timeRemaining -= Time.deltaTime;
@@ -74,7 +90,7 @@ public class ClickMain3 : MonoBehaviour
             EndGame();
         }
 
-        // Обновление границ экрана
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         if (Camera.main == null) return;
         screenHeight = Camera.main.orthographicSize * 2;
         screenWidth = screenHeight * Camera.main.aspect;
@@ -84,12 +100,12 @@ public class ClickMain3 : MonoBehaviour
     {
         gameStarted = false;
         CancelInvoke(nameof(Spawn));
-        WinPanel.SetActive(true); // Показать панель победы
+        WinPanel.SetActive(true); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     }
 
     private void UpdateTimeText()
     {
-        timeText.text = $"Время: {Mathf.CeilToInt(timeRemaining)}"; // Показываем оставшееся время
+        timeText.text = $"Р’СЂРµРјСЏ: {Mathf.CeilToInt(timeRemaining)}"; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
     }
 
     private void Spawn()
@@ -176,4 +192,44 @@ public class ClickMain3 : MonoBehaviour
     }
 
     private void UpdateScoreText() => scoreText.text = score.ToString();
+
+    public void Reset()
+    {
+        // РћС‚РјРµРЅСЏРµРј РІСЃРµ С‚РµРєСѓС‰РёРµ РІС‹Р·РѕРІС‹
+        CancelInvoke();
+
+        // РћС‡РёС‰Р°РµРј РІСЃРµ РѕР±СЉРµРєС‚С‹
+        ClearObjects();
+
+        // РЎР±СЂР°СЃС‹РІР°РµРј СЃС‡РµС‚
+        score = 0;
+        UpdateScoreText();
+
+        // РЎР±СЂР°СЃС‹РІР°РµРј СЃРѕСЃС‚РѕСЏРЅРёРµ РёРіСЂС‹
+        gameStarted = false;
+
+        // РЎРєСЂС‹РІР°РµРј РїР°РЅРµР»СЊ РїРѕР±РµРґС‹
+        WinPanel.SetActive(false);
+
+        // РЎР±СЂР°СЃС‹РІР°РµРј РІСЂРµРјСЏ
+        timeRemaining = gameDuration;
+        UpdateTimeText();
+
+        // РЎР±СЂР°СЃС‹РІР°РµРј РѕС‚СЃС‡РµС‚
+        countdownValue = 3;
+        startText.gameObject.SetActive(true);
+        startText.text = countdownValue.ToString();
+
+        // Р—Р°РїСѓСЃРєР°РµРј РѕС‚СЃС‡РµС‚ Р·Р°РЅРѕРІРѕ
+        InvokeRepeating(nameof(UpdateCountdown), 1f, 1f);
+    }
+
+    private void ClearObjects()
+    {
+        foreach (GameObject obj in spawnedObjects)
+        {
+            Destroy(obj);
+        }
+        spawnedObjects.Clear();
+    }
 }
