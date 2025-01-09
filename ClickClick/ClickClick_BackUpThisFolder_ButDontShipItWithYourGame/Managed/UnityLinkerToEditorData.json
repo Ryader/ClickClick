@@ -9,6 +9,12 @@
         "name": "Animation",
         "dependencies": [
           {
+            "name": "AnimationClip",
+            "scenes": [],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "Animator",
             "scenes": [],
             "dependencyType": 0,
@@ -27,10 +33,34 @@
             "icon": null
           },
           {
+            "name": "Avatar",
+            "scenes": [],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "AvatarMask",
+            "scenes": [],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "Motion",
+            "scenes": [],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "RuntimeAnimatorController",
             "scenes": [],
             "dependencyType": 1,
             "icon": null
+          },
+          {
+            "name": "Required by Director Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.director"
           }
         ]
       },
@@ -40,6 +70,8 @@
           {
             "name": "AudioBehaviour",
             "scenes": [
+              "Assets/Scenes/Game1.unity",
+              "Assets/Scenes/Game2.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -54,6 +86,8 @@
           {
             "name": "AudioListener",
             "scenes": [
+              "Assets/Scenes/Game1.unity",
+              "Assets/Scenes/Game2.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -72,10 +106,22 @@
             "icon": null
           },
           {
+            "name": "AudioSource",
+            "scenes": [],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "SampleClip",
             "scenes": [],
             "dependencyType": 1,
             "icon": null
+          },
+          {
+            "name": "Required by Director Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.director"
           }
         ]
       },
@@ -97,6 +143,8 @@
           {
             "name": "Camera",
             "scenes": [
+              "Assets/Scenes/Game1.unity",
+              "Assets/Scenes/Game2.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -116,7 +164,10 @@
           },
           {
             "name": "Cubemap",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/Game1.unity",
+              "Assets/Scenes/Game2.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -135,6 +186,8 @@
           {
             "name": "EditorExtension",
             "scenes": [
+              "Assets/Scenes/Game1.unity",
+              "Assets/Scenes/Game2.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 1,
@@ -149,6 +202,8 @@
           {
             "name": "GameObject",
             "scenes": [
+              "Assets/Scenes/Game1.unity",
+              "Assets/Scenes/Game2.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -175,6 +230,8 @@
           {
             "name": "LevelGameManager",
             "scenes": [
+              "Assets/Scenes/Game1.unity",
+              "Assets/Scenes/Game2.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 1,
@@ -201,6 +258,8 @@
           {
             "name": "LightmapSettings",
             "scenes": [
+              "Assets/Scenes/Game1.unity",
+              "Assets/Scenes/Game2.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -215,6 +274,8 @@
           {
             "name": "Material",
             "scenes": [
+              "Assets/Scenes/Game1.unity",
+              "Assets/Scenes/Game2.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -241,6 +302,8 @@
           {
             "name": "MonoBehaviour",
             "scenes": [
+              "Assets/Scenes/Game1.unity",
+              "Assets/Scenes/Game2.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -255,6 +318,8 @@
           {
             "name": "MonoScript",
             "scenes": [
+              "Assets/Scenes/Game1.unity",
+              "Assets/Scenes/Game2.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 1,
@@ -263,6 +328,8 @@
           {
             "name": "NamedObject",
             "scenes": [
+              "Assets/Scenes/Game1.unity",
+              "Assets/Scenes/Game2.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 1,
@@ -295,6 +362,8 @@
           {
             "name": "RectTransform",
             "scenes": [
+              "Assets/Scenes/Game1.unity",
+              "Assets/Scenes/Game2.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -309,6 +378,8 @@
           {
             "name": "RenderSettings",
             "scenes": [
+              "Assets/Scenes/Game1.unity",
+              "Assets/Scenes/Game2.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -323,6 +394,8 @@
           {
             "name": "Renderer",
             "scenes": [
+              "Assets/Scenes/Game1.unity",
+              "Assets/Scenes/Game2.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -343,6 +416,8 @@
           {
             "name": "Shader",
             "scenes": [
+              "Assets/Scenes/Game1.unity",
+              "Assets/Scenes/Game2.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -363,6 +438,8 @@
           {
             "name": "Sprite",
             "scenes": [
+              "Assets/Scenes/Game1.unity",
+              "Assets/Scenes/Game2.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -377,6 +454,8 @@
           {
             "name": "SpriteRenderer",
             "scenes": [
+              "Assets/Scenes/Game1.unity",
+              "Assets/Scenes/Game2.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -396,18 +475,14 @@
           },
           {
             "name": "Texture",
-            "scenes": [
-              "Assets/Scenes/Menu.unity"
-            ],
-            "dependencyType": 0,
+            "scenes": [],
+            "dependencyType": 1,
             "icon": null
           },
           {
             "name": "Texture2D",
-            "scenes": [
-              "Assets/Scenes/Menu.unity"
-            ],
-            "dependencyType": 0,
+            "scenes": [],
+            "dependencyType": 1,
             "icon": null
           },
           {
@@ -453,6 +528,12 @@
             "icon": "package/com.unity.modules.audio"
           },
           {
+            "name": "Required by Director Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.director"
+          },
+          {
             "name": "Required by GraphicsStateCollectionSerializer Module",
             "scenes": [],
             "dependencyType": 2,
@@ -495,6 +576,12 @@
             "icon": "package/com.unity.modules.jsonserialize"
           },
           {
+            "name": "Required by ParticleSystem Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.particlesystem"
+          },
+          {
             "name": "Required by Physics Module",
             "scenes": [],
             "dependencyType": 2,
@@ -523,6 +610,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.subsystems"
+          },
+          {
+            "name": "Required by TLS Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.tls"
           },
           {
             "name": "Required by TextCoreFontEngine Module",
@@ -561,6 +654,12 @@
             "icon": "package/com.unity.modules.unityanalyticscommon"
           },
           {
+            "name": "Required by UnityWebRequest Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.unitywebrequest"
+          },
+          {
             "name": "Required by VR Module",
             "scenes": [],
             "dependencyType": 2,
@@ -571,6 +670,17 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.xr"
+          }
+        ]
+      },
+      {
+        "name": "Director",
+        "dependencies": [
+          {
+            "name": "PlayableDirector",
+            "scenes": [],
+            "dependencyType": 0,
+            "icon": null
           }
         ]
       },
@@ -712,6 +822,23 @@
         ]
       },
       {
+        "name": "ParticleSystem",
+        "dependencies": [
+          {
+            "name": "ParticleSystem",
+            "scenes": [],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "ParticleSystemRenderer",
+            "scenes": [],
+            "dependencyType": 0,
+            "icon": null
+          }
+        ]
+      },
+      {
         "name": "Physics",
         "dependencies": [
           {
@@ -724,6 +851,12 @@
             "name": "PhysicsManager",
             "scenes": [],
             "dependencyType": 1,
+            "icon": null
+          },
+          {
+            "name": "Rigidbody",
+            "scenes": [],
+            "dependencyType": 0,
             "icon": null
           },
           {
@@ -746,7 +879,8 @@
           {
             "name": "CircleCollider2D",
             "scenes": [
-              "Assets/Scenes/Menu.unity"
+              "Assets/Scenes/Game1.unity",
+              "Assets/Scenes/Game2.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -761,6 +895,12 @@
             "name": "Physics2DSettings",
             "scenes": [],
             "dependencyType": 1,
+            "icon": null
+          },
+          {
+            "name": "Rigidbody2D",
+            "scenes": [],
+            "dependencyType": 0,
             "icon": null
           }
         ]
@@ -815,6 +955,12 @@
             "icon": "package/com.unity.modules.core"
           },
           {
+            "name": "Required by Director Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.director"
+          },
+          {
             "name": "Required by GraphicsStateCollectionSerializer Module",
             "scenes": [],
             "dependencyType": 2,
@@ -857,6 +1003,12 @@
             "icon": "package/com.unity.modules.jsonserialize"
           },
           {
+            "name": "Required by ParticleSystem Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.particlesystem"
+          },
+          {
             "name": "Required by Physics Module",
             "scenes": [],
             "dependencyType": 2,
@@ -885,6 +1037,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.subsystems"
+          },
+          {
+            "name": "Required by TLS Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.tls"
           },
           {
             "name": "Required by TextCoreFontEngine Module",
@@ -923,6 +1081,12 @@
             "icon": "package/com.unity.modules.unityanalyticscommon"
           },
           {
+            "name": "Required by UnityWebRequest Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.unitywebrequest"
+          },
+          {
             "name": "Required by VR Module",
             "scenes": [],
             "dependencyType": 2,
@@ -944,6 +1108,17 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.xr"
+          }
+        ]
+      },
+      {
+        "name": "TLS",
+        "dependencies": [
+          {
+            "name": "Required by UnityWebRequest Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.unitywebrequest"
           }
         ]
       },
@@ -987,6 +1162,7 @@
           {
             "name": "Font",
             "scenes": [
+              "Assets/Scenes/Game2.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -1030,6 +1206,8 @@
           {
             "name": "Canvas",
             "scenes": [
+              "Assets/Scenes/Game1.unity",
+              "Assets/Scenes/Game2.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -1044,6 +1222,8 @@
           {
             "name": "CanvasRenderer",
             "scenes": [
+              "Assets/Scenes/Game1.unity",
+              "Assets/Scenes/Game2.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -1084,6 +1264,10 @@
             "icon": "package/com.unity.modules.vr"
           }
         ]
+      },
+      {
+        "name": "UnityWebRequest",
+        "dependencies": []
       },
       {
         "name": "VR",

@@ -62,9 +62,21 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915
 		uint8_t Void_t4861ACF8F4594C3437BB48B6E56783494B843915__padding[1];
 	};
 };
+struct DEBUG_FLAGS_t579F8D46CE35DD82F32EF179031BD58823F576DF 
+{
+	uint32_t ___value__;
+};
 struct LayoutMeasureMode_tF611505DD74982A0B40646994C952A094E98FB30 
 {
 	int32_t ___value__;
+};
+struct RESULT_t1E31B643F38EE21E9B10FF1843F93EC77D3D11D7 
+{
+	int32_t ___value__;
+};
+struct SYSTEM_CALLBACK_TYPE_t653430698AD9847F1174345C38A45D1375887B8A 
+{
+	uint32_t ___value__;
 };
 struct IntPtr_t_StaticFields
 {
@@ -87,6 +99,8 @@ extern "C" void CDECL ReversePInvokeWrapper_MeshUtilities_SortEdges_mE3EE6CD3012
 extern "C" void DEFAULT_CALL ReversePInvokeWrapper_OSSpecificSynchronizationContext_InvocationEntry_mF93C3CF6DBEC86E377576D840CAF517CB6E4D7E3(intptr_t ___0_arg);
 extern "C" int32_t CDECL ReversePInvokeWrapper_RewindableAllocator_Try_mA4AF5A5088097CB6343C3CC97058959976372C35(intptr_t ___0_state, Block_tCCF620817FE305B5BF7B0FB7705B4571F976C4E3* ___1_block);
 extern "C" int32_t CDECL ReversePInvokeWrapper_RewindableAllocator_TryU24BurstManaged_mBB6DAE6A8CDB2E3626C38F3B65186AAF6ACBF6E8(intptr_t ___0_state, Block_tCCF620817FE305B5BF7B0FB7705B4571F976C4E3* ___1_block);
+extern "C" int32_t DEFAULT_CALL ReversePInvokeWrapper_RuntimeManager_DEBUG_CALLBACK_mB2AA8564B0EEC3492A6D1B7AE1BB6DB1972C5C15(uint32_t ___0_flags, intptr_t ___1_filePtr, int32_t ___2_line, intptr_t ___3_funcPtr, intptr_t ___4_messagePtr);
+extern "C" int32_t DEFAULT_CALL ReversePInvokeWrapper_RuntimeManager_ERROR_CALLBACK_mBCBF984F1290E7D232527666B04180BF0EB926EC(intptr_t ___0_system, uint32_t ___1_type, intptr_t ___2_commanddata1, intptr_t ___3_commanddata2, intptr_t ___4_userdata);
 extern "C" void CDECL ReversePInvokeWrapper_xxHash3_Hash128Long_mED9958D31B54E0E0666AAD34A52DE7CDEB802E6F(uint8_t* ___0_input, uint8_t* ___1_dest, int64_t ___2_length, uint8_t* ___3_secret, uint4_t6C69CBFAE9BF0F727D52B68779D4A3F0DBA8D5C9* ___4_result);
 extern "C" uint64_t CDECL ReversePInvokeWrapper_xxHash3_Hash64Long_m9950702E864DCCD9B8DEAAE23E7CBB5E79D4AC62(uint8_t* ___0_input, uint8_t* ___1_dest, int64_t ___2_length, uint8_t* ___3_secret);
 extern "C" int32_t CDECL ReversePInvokeWrapper_SlabAllocator_Try_mCD7DED588811A6E3F78E4A14CBFE2852D8E39DEB(intptr_t ___0_allocatorState, Block_tCCF620817FE305B5BF7B0FB7705B4571F976C4E3* ___1_block);
@@ -98,7 +112,7 @@ extern "C" void DEFAULT_CALL ReversePInvokeWrapper_NativeApi_OnHighTempWarning_m
 
 
 IL2CPP_EXTERN_C const Il2CppMethodPointer g_ReversePInvokeWrapperPointers[];
-const Il2CppMethodPointer g_ReversePInvokeWrapperPointers[21] = 
+const Il2CppMethodPointer g_ReversePInvokeWrapperPointers[23] = 
 {
 	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_AutoFreeAllocator_Try_m4FFF073754714947DFC8F4D7134E74CDC78C019C),
 	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_AutoFreeAllocator_TryU24BurstManaged_mE86E6DC99C88B259454710D7CC1906F995968ECF),
@@ -113,6 +127,8 @@ const Il2CppMethodPointer g_ReversePInvokeWrapperPointers[21] =
 	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_OSSpecificSynchronizationContext_InvocationEntry_mF93C3CF6DBEC86E377576D840CAF517CB6E4D7E3),
 	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_RewindableAllocator_Try_mA4AF5A5088097CB6343C3CC97058959976372C35),
 	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_RewindableAllocator_TryU24BurstManaged_mBB6DAE6A8CDB2E3626C38F3B65186AAF6ACBF6E8),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_RuntimeManager_DEBUG_CALLBACK_mB2AA8564B0EEC3492A6D1B7AE1BB6DB1972C5C15),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_RuntimeManager_ERROR_CALLBACK_mBCBF984F1290E7D232527666B04180BF0EB926EC),
 	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_xxHash3_Hash128Long_mED9958D31B54E0E0666AAD34A52DE7CDEB802E6F),
 	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_xxHash3_Hash64Long_m9950702E864DCCD9B8DEAAE23E7CBB5E79D4AC62),
 	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_SlabAllocator_Try_mCD7DED588811A6E3F78E4A14CBFE2852D8E39DEB),

@@ -9,6 +9,8 @@ public class ClickMain : MonoBehaviour
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI startText;
     [SerializeField] private TextMeshProUGUI timeText;
+    [SerializeField] private TextMeshProUGUI scoreText2;
+    [SerializeField] private TextMeshProUGUI timeText2;
     [SerializeField] internal GameObject objMain;
     [SerializeField] private InputAction Click;
 
@@ -96,6 +98,7 @@ public class ClickMain : MonoBehaviour
     {
         time += Time.deltaTime;
         timeText.text = $"{time:F2}";
+        timeText2.text = $"{time:F2}";
     }
 
     private void UpdateGameLogic()
@@ -280,5 +283,9 @@ public class ClickMain : MonoBehaviour
         return Mouse.current.position.ReadValue();
     }
 
-    private void UpdateScoreText() => scoreText.text = score.ToString();
+    private void UpdateScoreText()
+    {
+        scoreText.text = score.ToString();
+        scoreText2.text = score.ToString();
+    }
 }

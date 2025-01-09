@@ -211,33 +211,39 @@ public class ClickMain2 : MonoBehaviour
         ClearObjects();
     }
 
-    private void OnClickPerformed(InputAction.CallbackContext context)
+     private void OnClickPerformed(InputAction.CallbackContext context)
     {
         if (!gameStarted || Camera.main == null) return;
 
         Vector2 screenPosition = GetInputPosition();
         Vector3 worldPosition = Camera.main.ScreenToWorldPoint(new Vector3(screenPosition.x, screenPosition.y, 10f));
-        RaycastHit2D hit = Physics2D.Raycast(worldPosition, Vector2.zero);
+        
+        // Use a small radius for more reliable touch detection on mobile
+        RaycastHit2D[] hits = Physics2D.CircleCastAll(worldPosition, 0.5f, Vector2.zero);
 
-        if (hit.collider != null)
+        foreach (RaycastHit2D hit in hits)
         {
-            GameObject obj = hit.collider.gameObject;
-            if (obj.CompareTag("Green"))
-                score++;
-            else if (obj.CompareTag("Red"))
-                score--;
+            if (hit.collider != null)
+            {
+                GameObject obj = hit.collider.gameObject;
+                if (obj.CompareTag("Green"))
+                    score++;
+                else if (obj.CompareTag("Red"))
+                    score--;
 
-            spawnedObjects.Remove(obj.transform.root.gameObject);
-            Destroy(obj.transform.root.gameObject);
-            UpdateScoreText();
+                spawnedObjects.Remove(obj.transform.root.gameObject);
+                Destroy(obj.transform.root.gameObject);
+                UpdateScoreText();
+                break; // Stop after first successful hit
+            }
         }
     }
 
     private Vector2 GetInputPosition()
     {
-        if (Mouse.current == null)
+        if (Touchscreen.current != null && Touchscreen.current.primaryTouch.press.isPressed)
         {
-            return Vector2.zero;
+            return Touchscreen.current.primaryTouch.position.ReadValue();
         }
         return Mouse.current.position.ReadValue();
     }

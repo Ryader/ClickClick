@@ -3,8 +3,8 @@
 # min_api: 28
 # common_typos_disable
 # {"id":"com.android.tools.r8.mapping","version":"2.2"}
-# pg_map_id: e04357a
-# pg_map_hash: SHA-256 e04357a655a48fcf3b399d14ceb0a1392e25198010a2256a01fa8d4b6ed60d4b
+# pg_map_id: a1f373d
+# pg_map_hash: SHA-256 a1f373dd53ac95f0240c57db1cf95a4ef2c9739084ef575e4e4895ef32936c99
 android.support.v4.app.RemoteActionCompatParcelizer -> android.support.v4.app.RemoteActionCompatParcelizer:
 # {"id":"sourceFile","fileName":"RemoteActionCompatParcelizer.java"}
     0:3:void <init>():11:11 -> <init>
@@ -31926,11 +31926,226 @@ kotlinx.coroutines.scheduling.WorkQueue$$ExternalSyntheticBackportWithForwarding
 # {"id":"com.android.tools.r8.synthesized"}
     0:15:boolean m(java.util.concurrent.atomic.AtomicReferenceArray,int,java.lang.Object,java.lang.Object):0:0 -> a
       # {"id":"com.android.tools.r8.synthesized"}
+org.fmod.AudioDevice -> org.fmod.AudioDevice:
+# {"id":"sourceFile","fileName":"AudioDevice.java"}
+    0:3:void <init>():8:8 -> <init>
+    4:6:void <init>():10:10 -> <init>
+    0:5:void close():67:67 -> close
+    6:12:void close():71:71 -> close
+    13:18:void close():74:74 -> close
+    19:21:void close():75:75 -> close
+    0:4:boolean init(int,int,int,int):17:17 -> init
+    5:8:boolean init(int,int,int,int):18:18 -> init
+    9:14:boolean init(int,int,int,int):19:19 -> init
+    15:20:boolean init(int,int,int,int):21:21 -> init
+    21:51:boolean init(int,int,int,int):25:25 -> init
+    52:75:boolean init(int,int,int,int):34:34 -> init
+    76:87:boolean init(int,int,int,int):38:38 -> init
+    88:92:boolean init(int,int,int,int):48:48 -> init
+    93:97:boolean init(int,int,int,int):52:52 -> init
+    98:103:boolean init(int,int,int,int):54:54 -> init
+    104:106:boolean init(int,int,int,int):55:55 -> init
+    107:112:boolean init(int,int,int,int):42:42 -> init
+    0:6:void write(short[],int):80:80 -> write
+org.fmod.FMOD -> org.fmod.FMOD:
+# {"id":"sourceFile","fileName":"FMOD.java"}
+    0:7:void <clinit>():246:246 -> <clinit>
+    0:3:void access$000():22:22 -> access$000
+    0:3:void access$100():22:22 -> access$100
+    0:3:void access$200():22:22 -> access$200
+    0:7:boolean checkInit():65:65 -> checkInit
+    0:3:void close():48:48 -> close
+    4:8:void close():50:50 -> close
+    9:18:void close():53:53 -> close
+    19:24:void close():54:54 -> close
+    25:27:void close():57:57 -> close
+    0:4:int fileDescriptorFromUri(java.lang.String):216:216 -> fileDescriptorFromUri
+    5:8:int fileDescriptorFromUri(java.lang.String):218:218 -> fileDescriptorFromUri
+    9:20:int fileDescriptorFromUri(java.lang.String):222:222 -> fileDescriptorFromUri
+    21:26:int fileDescriptorFromUri(java.lang.String):228:228 -> fileDescriptorFromUri
+    0:10:android.content.res.AssetManager getAssetManager():70:70 -> getAssetManager
+    0:3:java.lang.String getDeviceName(int):157:157 -> getDeviceName
+    4:14:java.lang.String getDeviceName(int):159:159 -> getDeviceName
+    15:21:java.lang.String getDeviceName(int):160:160 -> getDeviceName
+    22:24:java.lang.String getDeviceName(int):163:163 -> getDeviceName
+    25:32:java.lang.String getDeviceName(int):165:165 -> getDeviceName
+    33:46:java.lang.String getDeviceName(int):167:167 -> getDeviceName
+    47:49:java.lang.String getDeviceName(int):172:172 -> getDeviceName
+    0:4:int getDeviceType(int):177:177 -> getDeviceType
+    5:15:int getDeviceType(int):179:179 -> getDeviceType
+    16:22:int getDeviceType(int):180:180 -> getDeviceType
+    23:25:int getDeviceType(int):183:183 -> getDeviceType
+    26:33:int getDeviceType(int):185:185 -> getDeviceType
+    34:44:int getDeviceType(int):187:187 -> getDeviceType
+    0:4:int[] getDevices(int):197:197 -> getDevices
+    5:14:int[] getDevices(int):199:199 -> getDevices
+    15:20:int[] getDevices(int):200:200 -> getDevices
+    21:23:int[] getDevices(int):203:203 -> getDevices
+    24:26:int[] getDevices(int):204:204 -> getDevices
+    27:38:int[] getDevices(int):206:206 -> getDevices
+    39:41:int[] getDevices(int):211:211 -> getDevices
+    0:3:int getOutputBlockSize():129:129 -> getOutputBlockSize
+    4:13:int getOutputBlockSize():131:131 -> getOutputBlockSize
+    14:21:int getOutputBlockSize():133:133 -> getOutputBlockSize
+    22:28:int getOutputBlockSize():136:136 -> getOutputBlockSize
+    0:3:int getOutputSampleRate():113:113 -> getOutputSampleRate
+    4:13:int getOutputSampleRate():115:115 -> getOutputSampleRate
+    14:21:int getOutputSampleRate():117:117 -> getOutputSampleRate
+    22:28:int getOutputSampleRate():120:120 -> getOutputSampleRate
+    0:3:void init(android.content.Context):31:31 -> init
+    4:10:void init(android.content.Context):34:34 -> init
+    11:17:void init(android.content.Context):35:35 -> init
+    18:27:void init(android.content.Context):39:39 -> init
+    28:40:void init(android.content.Context):40:40 -> init
+    41:44:void init(android.content.Context):41:41 -> init
+    0:4:boolean isBluetoothOn():145:145 -> isBluetoothOn
+    5:12:boolean isBluetoothOn():147:147 -> isBluetoothOn
+    13:26:boolean isBluetoothOn():149:149 -> isBluetoothOn
+    0:3:boolean lowLatencyFlag():88:88 -> lowLatencyFlag
+    4:18:boolean lowLatencyFlag():90:90 -> lowLatencyFlag
+    0:3:boolean proAudioFlag():97:97 -> proAudioFlag
+    4:18:boolean proAudioFlag():99:99 -> proAudioFlag
+    0:3:boolean supportsLowLatency():75:75 -> supportsLowLatency
+    4:7:boolean supportsLowLatency():76:76 -> supportsLowLatency
+    8:22:boolean supportsLowLatency():77:77 -> supportsLowLatency
+    23:26:boolean supportsLowLatency():79:79 -> supportsLowLatency
+    27:93:boolean supportsLowLatency():81:81 -> supportsLowLatency
+org.fmod.FMOD$PluginAudioDeviceCallback -> org.fmod.FMOD$PluginAudioDeviceCallback:
+# {"id":"sourceFile","fileName":"FMOD.java"}
+    0:2:void <init>(android.media.AudioDeviceInfo[]):253:253 -> <init>
+    3:12:void <init>(android.media.AudioDeviceInfo[]):254:254 -> <init>
+    13:15:void <init>(android.media.AudioDeviceInfo[]):258:258 -> <init>
+    16:34:void <init>(android.media.AudioDeviceInfo[]):260:260 -> <init>
+    5:7:void onAudioDevicesAdded(android.media.AudioDeviceInfo[]):273:273 -> onAudioDevicesAdded
+    8:25:void onAudioDevicesAdded(android.media.AudioDeviceInfo[]):275:275 -> onAudioDevicesAdded
+    26:35:void onAudioDevicesAdded(android.media.AudioDeviceInfo[]):277:277 -> onAudioDevicesAdded
+    36:44:void onAudioDevicesAdded(android.media.AudioDeviceInfo[]):281:281 -> onAudioDevicesAdded
+    45:67:void onAudioDevicesAdded(android.media.AudioDeviceInfo[]):285:285 -> onAudioDevicesAdded
+    68:72:void onAudioDevicesAdded(android.media.AudioDeviceInfo[]):292:292 -> onAudioDevicesAdded
+    73:76:void onAudioDevicesAdded(android.media.AudioDeviceInfo[]):296:296 -> onAudioDevicesAdded
+    5:7:void onAudioDevicesRemoved(android.media.AudioDeviceInfo[]):308:308 -> onAudioDevicesRemoved
+    8:25:void onAudioDevicesRemoved(android.media.AudioDeviceInfo[]):310:310 -> onAudioDevicesRemoved
+    26:35:void onAudioDevicesRemoved(android.media.AudioDeviceInfo[]):312:312 -> onAudioDevicesRemoved
+    36:44:void onAudioDevicesRemoved(android.media.AudioDeviceInfo[]):316:316 -> onAudioDevicesRemoved
+    45:67:void onAudioDevicesRemoved(android.media.AudioDeviceInfo[]):320:320 -> onAudioDevicesRemoved
+    68:72:void onAudioDevicesRemoved(android.media.AudioDeviceInfo[]):327:327 -> onAudioDevicesRemoved
+    73:76:void onAudioDevicesRemoved(android.media.AudioDeviceInfo[]):331:331 -> onAudioDevicesRemoved
+org.fmod.FMOD$PluginBroadcastReceiver -> org.fmod.FMOD$PluginBroadcastReceiver:
+# {"id":"sourceFile","fileName":"FMOD.java"}
+    0:3:void <init>():238:238 -> <init>
+    0:3:void onReceive(android.content.Context,android.content.Intent):243:243 -> onReceive
 org.fmod.FMODAudioDevice -> org.fmod.FMODAudioDevice:
 # {"id":"sourceFile","fileName":"SourceFile"}
 org.fmod.FmodAndroidAudioManager -> org.fmod.FmodAndroidAudioManager:
 # {"id":"sourceFile","fileName":"SourceFile"}
 org.fmod.FmodAndroidAudioManager$1 -> org.fmod.FmodAndroidAudioManager$1:
 # {"id":"sourceFile","fileName":"SourceFile"}
+org.fmod.MediaCodec -> org.fmod.MediaCodec:
+# {"id":"sourceFile","fileName":"MediaCodec.java"}
+    0:4:void <init>():18:18 -> <init>
+    5:6:void <init>():23:23 -> <init>
+    7:9:void <init>():24:24 -> <init>
+    10:11:void <init>():25:25 -> <init>
+    12:13:void <init>():26:26 -> <init>
+    14:15:void <init>():27:27 -> <init>
+    16:18:void <init>():28:28 -> <init>
+    19:20:void <init>():29:29 -> <init>
+    21:22:void <init>():30:30 -> <init>
+    23:24:void <init>():31:31 -> <init>
+    25:26:void <init>():32:32 -> <init>
+    27:29:void <init>():33:33 -> <init>
+    30:32:void <init>():34:34 -> <init>
+    0:2:long access$000(org.fmod.MediaCodec):18:18 -> access$000
+    0:4:int access$100(long,long,byte[],int,int):18:18 -> access$100
+    0:4:long access$200(long):18:18 -> access$200
+    0:2:int getChannelCount():38:38 -> getChannelCount
+    0:2:long getLength():36:36 -> getLength
+    0:2:int getSampleRate():37:37 -> getSampleRate
+    0:6:boolean init(long):42:42 -> init
+    7:13:boolean init(long):95:95 -> init
+    14:21:boolean init(long):96:96 -> init
+    22:30:boolean init(long):101:101 -> init
+    31:36:boolean init(long):104:104 -> init
+    37:42:boolean init(long):105:105 -> init
+    43:78:boolean init(long):106:106 -> init
+    79:86:boolean init(long):108:108 -> init
+    87:92:boolean init(long):112:112 -> init
+    93:97:boolean init(long):116:116 -> init
+    98:103:boolean init(long):117:117 -> init
+    104:108:boolean init(long):118:118 -> init
+    109:116:boolean init(long):120:120 -> init
+    117:124:boolean init(long):121:121 -> init
+    125:138:boolean init(long):123:123 -> init
+    139:150:boolean init(long):124:124 -> init
+    151:156:boolean init(long):125:125 -> init
+    157:164:boolean init(long):126:126 -> init
+    165:181:boolean init(long):127:127 -> init
+    182:186:boolean init(long):130:130 -> init
+    187:191:boolean init(long):131:131 -> init
+    192:220:boolean init(long):114:114 -> init
+    221:243:boolean init(long):98:98 -> init
+    1:17:int read(byte[],int):161:161 -> read
+    18:22:int read(byte[],int):167:167 -> read
+    23:32:int read(byte[],int):169:169 -> read
+    33:44:int read(byte[],int):172:172 -> read
+    45:57:int read(byte[],int):175:175 -> read
+    58:63:int read(byte[],int):176:176 -> read
+    64:73:int read(byte[],int):180:180 -> read
+    74:76:int read(byte[],int):181:181 -> read
+    77:84:int read(byte[],int):191:191 -> read
+    85:89:int read(byte[],int):193:193 -> read
+    90:99:int read(byte[],int):194:194 -> read
+    100:101:int read(byte[],int):197:197 -> read
+    102:110:int read(byte[],int):198:198 -> read
+    111:123:int read(byte[],int):199:199 -> read
+    124:133:int read(byte[],int):203:203 -> read
+    134:137:int read(byte[],int):205:205 -> read
+    138:166:int read(byte[],int):207:207 -> read
+    167:172:int read(byte[],int):211:211 -> read
+    173:192:int read(byte[],int):215:215 -> read
+    193:198:int read(byte[],int):218:218 -> read
+    199:200:int read(byte[],int):220:220 -> read
+    201:204:int read(byte[],int):225:225 -> read
+    205:208:int read(byte[],int):227:227 -> read
+    209:220:int read(byte[],int):229:229 -> read
+    221:223:int read(byte[],int):230:230 -> read
+    224:229:int read(byte[],int):232:232 -> read
+    230:232:int read(byte[],int):234:234 -> read
+    233:239:int read(byte[],int):235:235 -> read
+    240:243:int read(byte[],int):236:236 -> read
+    0:4:void release():142:142 -> release
+    5:7:void release():144:144 -> release
+    8:12:void release():145:145 -> release
+    13:14:void release():146:146 -> release
+    15:18:void release():149:149 -> release
+    19:21:void release():151:151 -> release
+    22:24:void release():152:152 -> release
+    0:4:void seek(int):246:246 -> seek
+    5:11:void seek(int):248:248 -> seek
+    12:14:void seek(int):249:249 -> seek
+    15:16:void seek(int):252:252 -> seek
+    17:18:void seek(int):253:253 -> seek
+    19:29:void seek(int):254:254 -> seek
+    30:33:void seek(int):257:257 -> seek
+    34:38:void seek(int):258:258 -> seek
+    39:44:void seek(int):260:260 -> seek
+    45:54:void seek(int):261:261 -> seek
+    55:64:void seek(int):263:263 -> seek
+    65:97:void seek(int):266:266 -> seek
+    98:101:void seek(int):271:271 -> seek
+    102:105:void seek(int):274:274 -> seek
+    106:112:void seek(int):275:275 -> seek
+org.fmod.MediaCodec$1DataSource -> org.fmod.MediaCodec$1DataSource:
+# {"id":"sourceFile","fileName":"MediaCodec.java"}
+    0:5:void <init>(org.fmod.MediaCodec):57:57 -> <init>
+    0:51:java.lang.Object invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[]):61:61 -> invoke
+    52:78:java.lang.Object invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[]):62:62 -> invoke
+    79:92:java.lang.Object invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[]):63:63 -> invoke
+    93:119:java.lang.Object invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[]):65:65 -> invoke
+org.fmod.MediaCodec$2DataSource -> org.fmod.MediaCodec$2DataSource:
+# {"id":"sourceFile","fileName":"MediaCodec.java"}
+    0:5:void <init>(org.fmod.MediaCodec):86:86 -> <init>
+    0:10:long getSize():89:89 -> getSize
+    0:14:int readAt(long,byte[],int,int):88:88 -> readAt
 org.fmod.a -> org.fmod.a:
 # {"id":"sourceFile","fileName":"SourceFile"}
