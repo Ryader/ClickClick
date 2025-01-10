@@ -47,10 +47,7 @@ public class ClickMain : MonoBehaviour
         UpdateScreenDimensions();
     }
 
-    private void Start()
-    {
-        InitializeGame();
-    }
+    private void Start() => InitializeGame();
 
     private void InitializeGame()
     {
@@ -148,10 +145,7 @@ public class ClickMain : MonoBehaviour
         }
     }
 
-    private void CleanupSpawnedObjectsList()
-    {
-        spawnedObjects.RemoveAll(obj => obj == null);
-    }
+    private void CleanupSpawnedObjectsList() => spawnedObjects.RemoveAll(obj => obj == null);
 
     private void Spawn()
     {
@@ -224,10 +218,7 @@ public class ClickMain : MonoBehaviour
     {
         foreach (GameObject obj in spawnedObjects)
         {
-            if (obj != null)
-            {
-                obj.SetActive(active);
-            }
+            obj?.SetActive(active);
         }
     }
 

@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class ClickMain2 : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private TextMeshProUGUI scoreText2;
     [SerializeField] private TextMeshProUGUI startText;
     [SerializeField] private TextMeshProUGUI timeText;
     [SerializeField] private GameObject WinPanel;
@@ -90,10 +91,7 @@ public class ClickMain2 : MonoBehaviour
         WinPanel.SetActive(true);
     }
 
-    private void UpdateTimeText()
-    {
-        timeText.text = $"Время: {Mathf.CeilToInt(timeRemaining)}";
-    }
+    private void UpdateTimeText() => timeText.text = $"Время: {Mathf.CeilToInt(timeRemaining)}";
 
     private void Spawn()
     {
@@ -135,29 +133,6 @@ public class ClickMain2 : MonoBehaviour
         }));
 
         GameObject newObj = Instantiate(objMain, randomPos, Quaternion.identity);
-
-        //// Получаем ссылку на зеленый круг
-        //Transform greenCircle = newObj.transform.Find("Green");
-        //if (greenCircle != null)
-        //{
-        //    // Получаем размер красного круга
-        //    Transform redCircle = newObj.transform.Find("Red");
-        //    if (redCircle != null)
-        //    {
-        //        float redRadius = redCircle.localScale.x / 2f;
-
-        //        // Генерируем случайный угол и расстояние
-        //        float randomAngle = Random.Range(0f, 360f);
-        //        float randomDistance = Random.Range(0f, redRadius * 0.5f); // Используем половину радиуса, чтобы зеленый круг всегда был внутри красного
-
-        //        // Вычисляем позицию
-        //        float x = Mathf.Cos(randomAngle * Mathf.Deg2Rad) * randomDistance;
-        //        float y = Mathf.Sin(randomAngle * Mathf.Deg2Rad) * randomDistance;
-
-        //        // Устанавливаем позицию зеленого круга относительно центра
-        //        greenCircle.localPosition = new Vector3(x, y, 0);
-        //    }
-        //}
 
         spawnedObjects.Add(newObj);
     }
@@ -211,14 +186,13 @@ public class ClickMain2 : MonoBehaviour
         ClearObjects();
     }
 
-     private void OnClickPerformed(InputAction.CallbackContext context)
+    private void OnClickPerformed(InputAction.CallbackContext context)
     {
         if (!gameStarted || Camera.main == null) return;
 
         Vector2 screenPosition = GetInputPosition();
         Vector3 worldPosition = Camera.main.ScreenToWorldPoint(new Vector3(screenPosition.x, screenPosition.y, 10f));
-        
-        // Use a small radius for more reliable touch detection on mobile
+
         RaycastHit2D[] hits = Physics2D.CircleCastAll(worldPosition, 0.5f, Vector2.zero);
 
         foreach (RaycastHit2D hit in hits)
@@ -234,7 +208,7 @@ public class ClickMain2 : MonoBehaviour
                 spawnedObjects.Remove(obj.transform.root.gameObject);
                 Destroy(obj.transform.root.gameObject);
                 UpdateScoreText();
-                break; // Stop after first successful hit
+                break;
             }
         }
     }
@@ -248,5 +222,9 @@ public class ClickMain2 : MonoBehaviour
         return Mouse.current.position.ReadValue();
     }
 
-    private void UpdateScoreText() => scoreText.text = score.ToString();
+    private void UpdateScoreText()
+    {
+        scoreText.text = score.ToString();
+        scoreText2.text = score.ToString();
+    }
 }

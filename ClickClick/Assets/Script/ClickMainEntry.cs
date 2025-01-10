@@ -6,6 +6,5 @@ public class ClickMainEntry
     public string sceneName;
     public MonoBehaviour clickMainScript;
     public GameObject objMain;
-
 }
 

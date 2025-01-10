@@ -5,29 +5,35 @@ public class Menu : MonoBehaviour
 {
     [SerializeField] private InputAction Esc;
     [SerializeField] private GameObject _Menu;
-    [SerializeField] private GameObject _GLMenu;
     [SerializeField] private GameObject _MenuPause;
+    [SerializeField] private GameObject _GameMode;
     [SerializeField] private bool isPaused = false;
 
-    private void Start()
+    [SerializeField] private Camera _小amera;
+    [SerializeField] private Color color = new Color();
+    [SerializeField] private Color color2 = new Color();
+
+    public void Start()
     {
-        if (_GLMenu != null)
+        if (_Menu != null)
         {
-            _GLMenu.SetActive(true);
+            _Menu.SetActive(true);
             Time.timeScale = 0f;
+            _小amera.backgroundColor = color;
         }
     }
 
-    public void 体睨()
+    public void 袦械薪褞()
     {
         if (_Menu != null)
         {
             _Menu.SetActive(false);
             Time.timeScale = 1f;
+            _GameMode.SetActive(true);
         }
     }
 
-    private void OnEnable()
+    public void OnEnable()
     {
         if (Esc != null)
         {
@@ -36,7 +42,7 @@ public class Menu : MonoBehaviour
         }
     }
 
-    private void OnDisable()
+    public void OnDisable()
     {
         if (Esc != null)
         {
@@ -50,7 +56,9 @@ public class Menu : MonoBehaviour
         if (_MenuPause == null) return;
 
         isPaused = !isPaused;
+        _GameMode.SetActive(!isPaused);
         _MenuPause.SetActive(isPaused);
         Time.timeScale = isPaused ? 0f : 1f;
+        _小amera.backgroundColor = isPaused ? color2 : color;
     }
 }

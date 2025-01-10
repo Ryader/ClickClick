@@ -3,7 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "GameSettings", menuName = "ClickClick/GameSettings")]
 public class GameSettings : ScriptableObject
 {
-    public float objectScale = 1f;  // значение масштаба по умолчанию
+    public float objectScale = 1f;
 
     private static GameSettings instance;
     public static GameSettings Instance
