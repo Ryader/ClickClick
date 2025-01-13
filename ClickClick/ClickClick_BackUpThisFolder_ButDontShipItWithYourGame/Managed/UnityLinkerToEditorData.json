@@ -9,12 +9,6 @@
         "name": "Animation",
         "dependencies": [
           {
-            "name": "AnimationClip",
-            "scenes": [],
-            "dependencyType": 0,
-            "icon": null
-          },
-          {
             "name": "Animator",
             "scenes": [],
             "dependencyType": 0,
@@ -33,34 +27,27 @@
             "icon": null
           },
           {
-            "name": "Avatar",
-            "scenes": [],
-            "dependencyType": 0,
-            "icon": null
-          },
-          {
-            "name": "AvatarMask",
-            "scenes": [],
-            "dependencyType": 0,
-            "icon": null
-          },
-          {
-            "name": "Motion",
-            "scenes": [],
-            "dependencyType": 0,
-            "icon": null
-          },
-          {
             "name": "RuntimeAnimatorController",
             "scenes": [],
             "dependencyType": 1,
             "icon": null
+          }
+        ]
+      },
+      {
+        "name": "AssetBundle",
+        "dependencies": [
+          {
+            "name": "AssetBundle",
+            "scenes": [],
+            "dependencyType": 0,
+            "icon": null
           },
           {
-            "name": "Required by Director Module",
+            "name": "Required by UnityWebRequestAssetBundle Module",
             "scenes": [],
             "dependencyType": 2,
-            "icon": "package/com.unity.modules.director"
+            "icon": "package/com.unity.modules.unitywebrequestassetbundle"
           }
         ]
       },
@@ -106,22 +93,16 @@
             "icon": null
           },
           {
-            "name": "AudioSource",
-            "scenes": [],
-            "dependencyType": 0,
-            "icon": null
-          },
-          {
             "name": "SampleClip",
             "scenes": [],
             "dependencyType": 1,
             "icon": null
           },
           {
-            "name": "Required by Director Module",
+            "name": "Required by Video Module",
             "scenes": [],
             "dependencyType": 2,
-            "icon": "package/com.unity.modules.director"
+            "icon": "package/com.unity.modules.video"
           }
         ]
       },
@@ -522,16 +503,16 @@
             "icon": "package/com.unity.modules.animation"
           },
           {
+            "name": "Required by AssetBundle Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.assetbundle"
+          },
+          {
             "name": "Required by Audio Module",
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.audio"
-          },
-          {
-            "name": "Required by Director Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.director"
           },
           {
             "name": "Required by GraphicsStateCollectionSerializer Module",
@@ -544,6 +525,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.hierarchycore"
+          },
+          {
+            "name": "Required by HotReload Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.hotreload"
           },
           {
             "name": "Required by IMGUI Module",
@@ -574,12 +561,6 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.jsonserialize"
-          },
-          {
-            "name": "Required by ParticleSystem Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.particlesystem"
           },
           {
             "name": "Required by Physics Module",
@@ -660,27 +641,28 @@
             "icon": "package/com.unity.modules.unitywebrequest"
           },
           {
+            "name": "Required by UnityWebRequestAssetBundle Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.unitywebrequestassetbundle"
+          },
+          {
             "name": "Required by VR Module",
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.vr"
           },
           {
+            "name": "Required by Video Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.video"
+          },
+          {
             "name": "Required by XR Module",
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.xr"
-          }
-        ]
-      },
-      {
-        "name": "Director",
-        "dependencies": [
-          {
-            "name": "PlayableDirector",
-            "scenes": [],
-            "dependencyType": 0,
-            "icon": null
           }
         ]
       },
@@ -703,6 +685,17 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.uielements"
+          }
+        ]
+      },
+      {
+        "name": "HotReload",
+        "dependencies": [
+          {
+            "name": "Required by AssetBundle Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.assetbundle"
           }
         ]
       },
@@ -822,23 +815,6 @@
         ]
       },
       {
-        "name": "ParticleSystem",
-        "dependencies": [
-          {
-            "name": "ParticleSystem",
-            "scenes": [],
-            "dependencyType": 0,
-            "icon": null
-          },
-          {
-            "name": "ParticleSystemRenderer",
-            "scenes": [],
-            "dependencyType": 0,
-            "icon": null
-          }
-        ]
-      },
-      {
         "name": "Physics",
         "dependencies": [
           {
@@ -851,12 +827,6 @@
             "name": "PhysicsManager",
             "scenes": [],
             "dependencyType": 1,
-            "icon": null
-          },
-          {
-            "name": "Rigidbody",
-            "scenes": [],
-            "dependencyType": 0,
             "icon": null
           },
           {
@@ -895,12 +865,6 @@
             "name": "Physics2DSettings",
             "scenes": [],
             "dependencyType": 1,
-            "icon": null
-          },
-          {
-            "name": "Rigidbody2D",
-            "scenes": [],
-            "dependencyType": 0,
             "icon": null
           }
         ]
@@ -943,6 +907,12 @@
             "icon": "package/com.unity.modules.animation"
           },
           {
+            "name": "Required by AssetBundle Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.assetbundle"
+          },
+          {
             "name": "Required by Audio Module",
             "scenes": [],
             "dependencyType": 2,
@@ -955,12 +925,6 @@
             "icon": "package/com.unity.modules.core"
           },
           {
-            "name": "Required by Director Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.director"
-          },
-          {
             "name": "Required by GraphicsStateCollectionSerializer Module",
             "scenes": [],
             "dependencyType": 2,
@@ -971,6 +935,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.hierarchycore"
+          },
+          {
+            "name": "Required by HotReload Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.hotreload"
           },
           {
             "name": "Required by IMGUI Module",
@@ -1001,12 +971,6 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.jsonserialize"
-          },
-          {
-            "name": "Required by ParticleSystem Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.particlesystem"
           },
           {
             "name": "Required by Physics Module",
@@ -1087,10 +1051,22 @@
             "icon": "package/com.unity.modules.unitywebrequest"
           },
           {
+            "name": "Required by UnityWebRequestAssetBundle Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.unitywebrequestassetbundle"
+          },
+          {
             "name": "Required by VR Module",
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.vr"
+          },
+          {
+            "name": "Required by Video Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.video"
           },
           {
             "name": "Required by XR Module",
@@ -1119,6 +1095,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.unitywebrequest"
+          },
+          {
+            "name": "Required by Video Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.video"
           }
         ]
       },
@@ -1162,7 +1144,6 @@
           {
             "name": "Font",
             "scenes": [
-              "Assets/Scenes/Game2.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -1234,6 +1215,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.uielements"
+          },
+          {
+            "name": "Required by Video Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.video"
           }
         ]
       },
@@ -1267,11 +1254,39 @@
       },
       {
         "name": "UnityWebRequest",
+        "dependencies": [
+          {
+            "name": "Required by UnityWebRequestAssetBundle Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.unitywebrequestassetbundle"
+          },
+          {
+            "name": "Required by Video Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.video"
+          }
+        ]
+      },
+      {
+        "name": "UnityWebRequestAssetBundle",
         "dependencies": []
       },
       {
         "name": "VR",
         "dependencies": []
+      },
+      {
+        "name": "Video",
+        "dependencies": [
+          {
+            "name": "VideoPlayer",
+            "scenes": [],
+            "dependencyType": 0,
+            "icon": null
+          }
+        ]
       },
       {
         "name": "XR",
